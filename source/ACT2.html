@@ -1,0 +1,239 @@
+<!doctype.html>
+<html>
+<head>
+<link rel="stylesheet" href="layout2.css" media="all"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="shop.js" type="text/javascript"></script>
+<style>
+
+#left2{
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:378px
+			
+}
+#left2  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+			 #left2{
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:378px
+			
+}
+#left1{
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:378px
+			
+}
+#left1  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+
+#right1 {
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:400px
+			
+}
+#right1  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+#right2 {
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:400px
+			
+}
+#right2  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+</style>
+</head>
+
+
+<body>
+<div id="cover"></div>
+<!--Main Container starts here-->
+<div class="main_wrapper">
+
+<!--Header Container starts here-->
+<div class="header_wrapper">
+
+<!--The image shall be sustituted-->
+
+<img id=“banner”； src="connect.jpg" width="1000px" height="200px"/>
+
+<!--Header Container ends here-->
+
+<!--Navigation bar starts here-->
+<div class="menubar">    
+<ul id="menu">
+<li><a href="Home2.html"><i class="fa fa-home"></i>Home</a>
+<ul>
+<li><a href="Home2.html#New game">New game</a></li>
+<li><a href="Home2.html#Hottest sale">Hottest sale</a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-shopping-bag"></i> All products</a>
+<ul>
+<li><a href="ACT2.html">ACT</a></li>
+<li><a href="SPG2.html">SPG</a></li>
+<li><a href="RPG2.html">RPG</a></li>
+<li><a href="EA22.html">EA</a></li>
+<li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</li>
+<li><a href="signup2.html"><i class="material-icons">assignment_ind</i> Sign Up</a></li>
+<li><a href="#"><i class="fa fa-shopping-cart" ></i>
+Shopping Cart</a></li>
+<li><a href="#">
+<i class="material-icons" >contact_phone</i> Contact Us</a></li>
+
+</ul>
+
+<div id="form";>
+              
+       <form method="get" action="results.php" enctype="multipart/form-data">
+        <input type="text" name="user_query" placeholder="Search a Product" />
+        <input type="submit" name="search" value="Search" />
+		</form>
+		
+		</div>
+</div>
+<!--Navigation bar ends here-->
+
+
+<!--content_wrapper starts here-->
+<div class="content_wrapper">
+
+<!--content_wrapper ends here-->
+
+
+<div id="sidebar">
+
+
+<div id="sidebar_title">Categories</div>
+
+<ul id="cats">
+
+       <li><a href="ACT2.html">ACT</a></li>
+	    <li><a href="SPG2.html">SPG </a></li>
+	   <li><a href="RPG2.html">RPG</a></li>
+	  
+	   
+	   </ul>
+	    <div id="sidebar_title">Brands</div>
+
+<ul id="cats">
+
+       <li><a href="EA2.html">EA </a></li>
+	   <li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</div>
+<div id="content_area">
+
+<h1>>AVG</h1>
+
+<hr>
+<img src="tlou.jpg" width="380px" height="420px"/>
+<img src="gta2.jpg" width="410px" height="420px"/>
+
+<div id="left1">
+     <h2>$29.96 &nbsp &nbsp &nbsp &nbsp&nbsp <button id="ct" onclick="noshop()"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+        <h3><a href="#" >The Last Of Us</a></h3>
+		<h3>Platform:PC,PS4,PS3</h3>
+    </div>
+
+<div id="right1">
+     <h2>$19.99&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp <button id="ct" onclick="noshop()"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+        <h3><a href="#">GTA5</a></h3>
+		<h3>Platform:PC,PS4,XBOX ONE</h3>
+    </div>
+<div id="signup">
+<button id="x" onclick="hid()">X</button>
+   <fieldset>
+    <h2 >Sign In</h2>
+     <form  name="form1" method="POST" action="" onsubmit="return submitFunction();" >
+	 
+	 	 
+	 Username:<input id="username" type="text"  name="username" placeholder="Username"
+	  style="width:220px;height:30px;"/>
+	 <label for="username" class="uname" data-icon="&#xe971;"></label>
+      
+	  <br>
+	  
+      Password:<label for="password" class="youpasswd" data-icon="&#xe900;" ></label>
+	  <input id="password" type="password" name="password" placeholder="Password"  
+	  style="width:220px;height:30px;"/> <br/>
+	   
+	  <input  type="checkbox" name="Remember" value="Remember me">&nbsp 
+	  <h5 style="display:inline">Remember me</h5>
+	  <a href="#"><h5 >&nbsp Forgot your password?</h5></a>
+	  <br/>
+      <input  id="btn" class="button" type="submit"   value="Log in"/>
+	  <input  class="button" type="submit" onclick="signup();return false"  value="Register"  />
+     </form>
+    </fieldset>
+</div>
+
+<img src="Uncharted4.jpg" width="380px" height="460px"/>
+<img src="cs.png" width="410px" height="460px"/>
+
+<div id="left2">
+     <h2>$54.99 &nbsp &nbsp &nbsp &nbsp&nbsp <button id="ct" onclick="noshop()"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+        <h3><a href="#" >Uncharted4</a></h3>
+		<h3>Platform:PS4</h3>
+    </div>
+
+<div id="right2">
+     <h2>$12.99&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp <button id="ct" onclick="noshop()"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+        <h3><a href="#">CS Go</a></h3>
+		<h3>Platform:PC,PS3,XBOX ONE</h3>
+    </div>
+</div>
+<div id="footer">
+<h3> About Us/Contact Us/Join Us/
+<br> &nbsp &copy2016 Gamer Galaxy.All Rights Reseved.</h3>
+
+</div>
+</body>
+</html>
+<script>
+btn.addEventListener("click",tu,true);
+function tu(){if(username.value=="Helen"& password.value=="123456")
+     document.form1.action = "Home.html?" + 
+     document.form1.username.value+ "&" +document.form1.password.value;
+	      			}
+</script>

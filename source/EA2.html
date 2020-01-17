@@ -1,0 +1,334 @@
+<!doctype.html>
+<html>
+<head>
+<link rel="stylesheet" href="layout2.css" media="all"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="shop.js" type="text/javascript"></script>
+    <style type="text/css">
+        .auto-style1 {
+		    float:right;
+            width:390px; 
+            height:535px;
+			margin:5px;
+			
+			}
+#signup{position:absolute;
+        left:700px;
+	    z-index:3;
+		display:none;
+		   }
+#signup a:link{color:black;
+		       text-decoration:none;}
+		      
+#signup a:visited{color:black;
+		       }
+#signup a:hover{color:purple; 
+		        font-weight:bold; 
+                text-decoration:none;}
+				
+fieldset {
+    border-radius: 15px;
+	opacity:0.95;
+    background-color:#DADADA;
+    float:left; 
+    width:232px;
+	height:260px;
+	font-family:Californian FB;
+	font-size:20px;
+	font-weight:bold;
+    display:inline block;
+    margin-right: 2px;
+	padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+fieldset h2{text-align:center;
+            font-size:35px;
+            background: -webkit-repeating-linear-gradient(-45deg, 
+	         rgb(18, 83, 93) , 
+	         rgb(18, 83, 93) 20px, 
+	rgb(64, 111, 118) 20px, 
+	rgb(64, 111, 118) 40px, 
+	rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;}
+fieldset h2:after
+{	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 5px;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), 
+	color-stop(100%,rgba(147,184,189,0))); 
+	
+}
+.button{
+	   margin-left:2px;
+       background-color:#109EAE;
+	   border:none;
+	   border-radius:5px;
+	   color:white;
+	   padding: 10px 25px;
+       font-size: 18px;
+	   cursor:pointer;
+}
+.button:hover {background-color: #14B3C4}
+@font-face{
+         font-family:'imooc-icon';
+		 src:url('fonts/icomoon.eot');
+		 src:url('fonts/icomoon.eot?#iefix')format('embedded-opentype')
+             ,url('fonts/icomoon.woff')format('woff')
+			 ,url('fonts/icomoon.ttf')format('truetype')
+			 ,url('fonts/icomoon.svg')format('svg');
+			 
+		font-weight:normal;
+		font-style:normal;
+}
+.imooc-icon{
+         font-family:"imooc-icon";
+		 font-style:normal;
+		 font-weight:normal;
+		 }
+		 
+
+[data-icon]:after{
+    content: attr(data-icon);
+    color: black ;
+	opacity:0.6;
+	font-family:'imooc-icon';
+ }
+.uname{ z-index:4;
+         position:absolute;
+          left:210px;
+		  top:80px;
+	       width:30px;}
+.youpasswd{position:absolute;
+           z-index:4;
+           left:210px;
+	       top:134px;
+	       width:30px;}
+.fa figcaption{
+position:absolute;
+left:460px;
+top:700px;
+background-color:#2c3f52;
+color:white;
+height:68px;
+width:800px;
+opacity:0.9;
+
+}
+.ba figcaption{
+position:absolute;
+left:460px;
+top:1215px;
+background-color:#2c3f52;
+color:white;
+height:68px;
+width:800px;
+opacity:0.9;
+
+}
+.ti figcaption{
+position:absolute;
+left:460px;
+top:1775px;
+background-color:#2c3f52;
+color:white;
+height:68px;
+width:800px;
+opacity:0.9;
+
+}
+figcaption a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+			 
+    </style>
+    </head>
+
+<body>
+<!--cover-->
+<div id="cover"></div>
+<!--Main Container starts here-->
+<div class="main_wrapper">
+
+<!--Header Container starts here-->
+<div class="header_wrapper">
+
+<!--The image shall be sustituted-->
+
+<img id=“banner”； src="EA.jpg" width=1000px height=200px;/>
+
+<!--Header Container ends here-->
+
+<!--Navigation bar starts here-->
+<div class="menubar">    
+<ul id="menu">
+<li><a href="Home2.html"><i class="fa fa-home"></i>Home</a>
+<ul>
+<li><a href="Home2.html#New game">New game</a></li>
+<li><a href="Home2.html#Hottest sale">Hottest sale</a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-shopping-bag"></i> All products</a>
+<ul>
+<li><a href="ACT2.html">ACT</a></li>
+<li><a href="SPG2.html">SPG</a></li>
+<li><a href="RPG2.html">RPG</a></li>
+<li><a href="EA2.html">EA</a></li>
+<li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</li>
+<li><a href="signup2.html"><i class="material-icons">assignment_ind</i> Sign Up</a></li>
+<li><a href="#"><i class="fa fa-shopping-cart" ></i>
+Shopping Cart</a></li>
+<li><a href="#">
+<i class="material-icons" >contact_phone</i> Contact Us</a></li>
+
+</ul>
+
+<div id="form";>
+              
+       <form method="get" action="results.php" enctype="multipart/form-data">
+        <input type="text" name="user_query" placeholder="Search a Product" />
+        <input type="submit" name="search" value="Search" />
+		</form>
+		
+		</div>
+</div>
+<!--Navigation bar ends here-->
+
+
+<!--content_wrapper starts here-->
+<div class="content_wrapper">
+
+<!--content_wrapper ends here-->
+
+
+<div id="sidebar">
+
+
+<div id="sidebar_title">Categories</div>
+
+<ul id="cats">
+
+       <li><a href="ACT2.html">ACT</a></li>
+	    <li><a href="SPG2.html">SPG </a></li>
+	   <li><a href="RPG2.html">RPG</a></li>
+	  
+	   
+	   </ul>
+	    <div id="sidebar_title">Brands</div>
+
+<ul id="cats">
+
+       <li><a href="EA2.html">EA </a></li>
+	   <li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</div>
+<div id="content_area">
+
+
+<h1>>FIFA17</h1>
+
+<hr>
+<div class="fa">
+
+<img src="fifa.jpg" width="800px"/>
+<figure>
+<figcaption>
+<h2>$56.69<button id="ct" onclick="noshop()" style="position;absolute;left:610px;"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+<a href="#"><h3>FIFA17<br/></a>
+Platform:PC,PS4,XBOXONE</h3>
+</figcaption>
+</figure>
+</div>
+<!--sign up-->
+<div id="signup">
+<button id="x" onclick="hid()">X</button>
+   <fieldset>
+    <h2 >Sign In</h2>
+     <form  name="form1" method="POST" action="" onsubmit="return submitFunction();" >
+	 
+	 	 
+	 Username:<input id="username" type="text"  name="username" placeholder="Username"
+	  style="width:220px;height:30px;"/>
+	 <label for="username" class="uname" data-icon="&#xe971;"></label>
+      
+	  <br>
+	  
+      Password:<label for="password" class="youpasswd" data-icon="&#xe900;" ></label>
+	  <input id="password" type="password" name="password" placeholder="Password"  
+	  style="width:220px;height:30px;"/> <br/>
+	   
+	  <input  type="checkbox" name="Remember" value="Remember me">&nbsp 
+	  <h5 style="display:inline">Remember me</h5>
+	  <a href="#"><h5 >&nbsp Forgot your password?</h5></a>
+	  <br/>
+      <input  id="btn" class="button" type="submit"   value="Log in"/>
+	  <input  class="button" type="submit" onclick="signup();return false"  value="Register"  />
+     </form>
+    </fieldset>
+</div>
+<h1>>Battlefield1</h1>
+
+<hr> 
+<div class="ba">
+<img src="la.jpg" width="800px"/>
+<figure>
+<figcaption>
+<h2>$49.69<button id="ct" onclick="noshop()" style="position;absolute;left:610px;"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+<a href="#"><h3>Battlefield1<br/></a>
+Platform:PC,PS4,XBOXONE</h3>
+</figcaption>
+</figure>
+</div>	
+
+<div class="ti">
+<h1>>Titanfall</h1>
+
+<hr> 
+
+<img src="titanfall1.jpg" height="492px"width="800px" />	
+<figure>
+<figcaption>
+<h2>$49.69<button id="ct" onclick="noshop()" style="position;absolute;left:610px;"><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+<a href="#"><h3>Titanfall<br/></a>
+Platform:PC,PS4,XBOXONE</h3>
+</figcaption>
+</figure>	
+	 </div>	
+</div>	
+		
+	
+	 
+
+<div id="footer">
+<h3> About Us/Contact Us/Join Us/
+<br> &nbsp &copy2016 Gamer Galaxy.All Rights Reseved.</h3>
+
+</div>
+</body>
+</html>
+<script>
+
+btn.addEventListener("click",tu,true);
+
+function noshop(){
+	alert("You haven't sign in!");
+	document.getElementById("signup").style.display = "block";
+	document.getElementById("cover").style.display = "block";	
+}
+function tu(){if(username.value=="Helen"& password.value=="123456")
+     document.form1.action = "Home.html?" + 
+     document.form1.username.value+ "&" +document.form1.password.value;
+	      			}
+</script>

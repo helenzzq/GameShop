@@ -1,0 +1,121 @@
+<!DOCTYPE html>  
+<html>  
+<head>  
+    <meta charset="utf-8">  
+ <title></title>  
+ <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script>
+function AddToCart(itemToAdd){
+document.getElementById("products").style.visibility="hidden";
+document.getElementById("TheCart").style.visibility="visible";
+}
+
+
+</script>
+<style>
+.kuan{border:none;
+color:black;
+background-color:white;
+text-decoration:underline;
+
+
+}
+
+</style>
+</head>  
+
+<body>
+<script>
+function AddPriceObject(itemToPrice){
+var TheCartItemPrice = document.getElementById("cartItemImages");
+var TheCartItem=document.getElementById("CartItem"+itemToPrice);
+var ThePriceDiv=document.createElement("div");
+var ThePrice=document.createTextNode("$"+TheCartItem.getAttribute("data-price"));
+ThePriceDiv.id='PriceItem'+itemToPrice;
+ThePriceDiv.appendChild(ThePrice);
+TheCartItemPrice.appendChild(ThePriceDiv);
+
+
+}
+function RemoveCartItem(item){
+         var ItemId ='CartItem'+item;
+		 var RemoveId ='RemoveItem'+item;
+		 var obj =document.getElementById(ItemId);
+		 obj.parentNode.removeChild(obj);
+		 obj=document.getElementById(RemoveId);
+		 obj.parentNode.removeChild(obj);
+
+
+
+}
+function AddRemoveObject(itemToRemove){
+         var TheCartItemRemove =document.getElementById('cartItemRemove');
+		 var TheRemoveDiv =document.createElement('div');
+		 var TheRemovebutton =document.createElement("button");
+		 var df = document.createTextNode("Remove");
+		 
+		 TheRemoveDiv.id='RemoveItem'+itemToRemove;
+		 TheRemovebutton.setAttribute("class","kuan");
+		 TheRemovebutton.onclick=function(){RemoveCartItem(itemToRemove);};
+		 TheRemovebutton.appendChild(df);
+		 TheRemoveDiv.appendChild(TheRemovebutton);
+		 TheCartItemRemove.appendChild(TheRemoveDiv);
+		
+		 
+		 
+		
+
+
+}
+
+function back(){
+document.getElementById('TheCart').style.display='none';
+document.getElementById('products').style.visibility='visible';
+}
+function shop(itemToadd){
+
+var itm=document.getElementById(itemToadd);
+var itms=itm.cloneNode(true); 
+var node=document.getElementById("cartItemImages");
+itms.childNodes[1].height=200;
+itms.childNodes[1].width=200;
+
+node.appendChild(itms);
+
+itms.id='CartItem'+itemToadd;
+document.getElementById('products').style.visibility='hidden';
+document.getElementById('TheCart').style.display='block';
+AddRemoveObject(itemToadd);
+AddPriceObject(itemToadd);
+AddQuantityObject(itemToadd);
+AddTotalObject(itemToadd);
+}
+
+</script>
+<div id="TheCart" style="display:none;position:absolute;">
+<div>The Cart<button onclick="back()">Continue Shopping</button></div>
+<div id="cartItemImages" style="position:absolute;left:2px;top:30px;margin-bottom:20px;"></div>
+<div id="cartItemRemove" style="position:relative;left:700px;"></div>
+<div id="cartItemPrice" style=""></div>
+<div id="cartItemQuantity" style=""></div>
+<div id="cartItemTotal" style=""></div>
+<div id="cartTotal" style=""></div>
+
+</div> 
+<div id="products">
+<div id="tlou" data-price="19.99"style="display:inline;">
+<img src="tlou.jpg" width="380px" height="420px"/></div><button id="ct" onclick='shop("tlou")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+<div id="gta2" style="display:inline;">
+<img src="gta2.jpg" width="410px" height="420px"/></div><button id="ct" onclick='shop("gta2")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+<div id="Uncharted4" style="display:inline;">		
+<img src="Uncharted4.jpg" width="380px" height="460px"/></div><button id="ct" onclick='shop("Uncharted4")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+<div id="cs" style="display:inline;">	
+<img src="cs.png" width="410px" height="460px"/></div><button id="ct" onclick='shop("cs")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></h2>
+
+</div>
+
+
+</body> 
+ 
+</html>  

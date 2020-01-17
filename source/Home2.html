@@ -1,0 +1,440 @@
+<!doctype.html>
+<html>
+<head>
+<link rel="stylesheet" href="layout2.css" media="all"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="shop.js" type="text/javascript"></script>
+<style type="text/css">
+#cover{position:absolute;
+	   top:0px;
+       width:1700px;
+	   height:2220px;
+       float:left;
+	   background-color:black;
+	   z-index:3;
+       opacity:0.7;
+       display:none;
+}
+#cancel{width:20px;
+        height:20px;
+        position:absolute;
+        left:1240px;
+		top:720px;
+        color:white;
+        background-color:#F55650;
+		border-radius:10px;
+		padding:2px;
+        border:none;
+        z-index:4;
+        cursor:pointer;
+        display:none;		
+			  }
+#cancel:active{color: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#C71B15), to(#C71B15));
+	background: -moz-linear-gradient(top,  #C71B15,  #F55650);}
+
+#trailer{position:absolute;
+         left:460px;
+		 top:720px;
+		 z-index:4;
+         width:800px;
+		 height:540px;
+         display:none;
+		 
+}
+#bn{      position:absolute;
+          left:1165px;
+		  top:1148px;
+		  width:80px;
+          height:80px;
+		  border:none;
+          border-radius:40px;
+		  background:#33c8f3;
+          border-color:#33c8f3;
+		  color:white;
+		  font-size:20px;
+		  font-family:Monotype Corsiva;
+		  cursor:pointer;
+          z-index:2;
+ }
+#bn:active{color: white;
+	background: -webkit-gradient(linear, left top, left bottom, from(#02AADC), to(#02AADC));
+	background: -moz-linear-gradient(top,  #02AADC,  #33c8f3);}
+.button{
+	   margin-left:2px;
+       background-color:#109EAE;
+	   border:none;
+	   border-radius:5px;
+	   color:white;
+	   padding: 10px 25px;
+       font-size: 18px;
+	   cursor:pointer;
+}
+.button:hover {background-color: #14B3C4}
+
+.join{margin-top:0px;
+          position:absolute;
+	      z-index:0;
+	       }
+		   
+#signup1{position:absolute;
+	       z-index:1;
+		   margin-top:40px;}
+#signup1  
+        a:link{color:black;
+		       text-decoration:none;}
+		      
+	    a:visited{color:black;
+		       }
+		a:hover{color:purple; 
+		        font-weight:bold; 
+                text-decoration:underline;}
+fieldset {
+    border-radius: 15px;
+	opacity:0.95;
+    background-color:#DADADA;
+    float:left; 
+    width:232px;
+	height:250px;
+	font-family:Californian FB;
+	font-size:20px;
+	font-weight:bold;
+    display:inline block;
+    margin-right: 2px;
+	padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+	#intro {color:black;
+	        font-family:Georgia;
+			font-size:18px;
+			
+			}
+	#watch2 {color:black;
+	             width: 790px;
+	             float:left;
+				 padding-left:10px;
+				 background-color:white;
+				 
+    }
+	
+	
+	 #overview{font-family:Lucida Bright;
+	          background-color:#2EACD2;
+			  font-size:30px;			  
+			  }
+    
+	.WA{position:relative;
+	    z-index:1;
+		margin-top:457px;}
+
+.demo ul li a:hover span{
+	display:block;
+}
+#sidebar2{
+	width:200px;
+	height:1800px;
+	background:#2EB8BD;
+    float:left;}
+#content_area2{
+	width:800px;
+	height:1800px;
+	float:right;
+	background-color:rgba(205,205,205,0.5);
+}
+
+@font-face{
+         font-family:'imooc-icon';
+		 src:url('fonts/icomoon.eot');
+		 src:url('fonts/icomoon.eot?#iefix')format('embedded-opentype')
+             ,url('fonts/icomoon.woff')format('woff')
+			 ,url('fonts/icomoon.ttf')format('truetype')
+			 ,url('fonts/icomoon.svg')format('svg');
+			 
+		font-weight:normal;
+		font-style:normal;
+}
+.imooc-icon{
+         font-family:"imooc-icon";
+		 font-style:normal;
+		 font-weight:normal;
+		 }
+		 
+
+[data-icon]:after{
+    content: attr(data-icon);
+    color: black ;
+	opacity:0.6;
+	font-family:'imooc-icon';
+ }
+.uname1{ z-index:4;
+         position:absolute;
+          left:210px;
+	      top:34px;
+	       width:30px;}
+.youpasswd1{position:absolute;
+           left:210px;
+	       top:90px;
+	       width:30px;}
+		
+</style>
+    </head>
+<script  >
+    function submitFunction()
+	{
+   if(username.value==""||password.value=="")
+   {
+  alert("Both fields can't be empty.");
+    }
+	else{
+	
+	if(username.value=="Helen")
+	  {
+	  if(password.value=="123456")
+	  { alert("Login successfully!");
+	   
+     
+	 }
+	  else{
+	  alert("Password do not match");
+	  }
+	}
+	  else{
+	     alert("User doesn't exist");
+  }
+		  
+}
+}	
+function signup(){
+ location.href ="signup2.html";
+}
+
+  </script>
+<body>
+<div id="cover"></div>
+<!--Main Container starts here-->
+<div class="main_wrapper">
+
+<!--Header Container starts here-->
+<div class="header_wrapper">
+
+
+<img id=“banner”； src="2.jpg" width=1000px/>
+
+<!--Header Container ends here-->
+
+<!--Navigation bar starts here-->
+<div class="menubar">    
+<ul id="menu">
+<li><a href="Home2.html"><i class="fa fa-home"></i>Home</a>
+<ul>
+<li><a href="#New game">New game</a></li>
+<li><a href="#Hottest sale">Hottest sale</a></li>
+</ul>
+</li>
+
+<!--drop down list-->
+<li><a href="#"><i class="fa fa-shopping-bag"></i> All products</a>
+<ul>
+<li><a href="ACT2.html">ACT</a></li>
+<li><a href="SPG2.html">SPG</a></li>
+<li><a href="RPG2.html">RPG</a></li>
+<li><a href="EA2.html">EA</a></li>
+<li><a href="Ubisoft.html">Ubisoft</a></li>
+</ul>
+</li>
+
+
+<li><a href="signup2.html"><i class="material-icons">assignment_ind</i> Sign Up</a></li>
+<li><a href="#"><i class="fa fa-shopping-cart" ></i>
+Shopping Cart</a></li>
+<li><a href="#">
+<i class="material-icons" >contact_phone</i> Contact Us</a></li>
+
+</ul>
+
+
+<div id="form";>
+              
+        <form method="get" action="results.php" enctype="multipart/form-data">
+        <input type="text" name="user_query" placeholder="Search a Product" />
+        <input type="submit" name="search" value="Search" />
+		</form>
+		
+		</div>
+</div>
+<!--Navigation bar ends here-->
+
+
+<!--content_wrapper starts here-->
+<div class="content_wrapper">
+
+<!--content_wrapper ends here-->
+
+
+<div id="sidebar2">
+
+
+<div id="sidebar_title">Categories</div>
+
+<ul id="cats">
+
+       <li><a href="ACT2.html">ACT</a></li>
+	    <li><a href="SPG2.html">SPG </a></li>
+	   <li><a href="RPG2.html">RPG</a></li>
+	  
+	   
+	   </ul>
+	    <div id="sidebar_title">Brands</div>
+
+<ul id="cats">
+
+       <li><a href="EA2.html">EA </a></li>
+	   <li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</div>
+
+<div id="content_area2" >
+<!--validation area starts here-->
+
+<a href="signup2.html"><img class="join"  src="41.jpg" width="800px"/><br></a>
+
+&nbsp <div id="signup1">
+   <fieldset>
+   
+     <form  name="form1" method="POST" action="" onsubmit="return submitFunction();" >
+	 
+	 	 
+	 Username:<input id="username" type="text"  name="username" placeholder="Username"
+	  style="width:220px;height:30px;"/>
+	 <label for="username" class="uname1" data-icon="&#xe971;"></label>
+      
+	  <br>
+	  
+      Password:<label for="password" class="youpasswd1" data-icon="&#xe900;" ></label>
+	  <input id="password" type="password" name="password" placeholder="Password"  
+	  style="width:220px;height:30px;"/> <br/>
+	   
+	  <input  type="checkbox" name="Remember" value="Remember me">&nbsp 
+	  <h5 style="display:inline">Remember me</h5>
+	  <a href="#"><h5 >&nbsp Forgot your password?</h5></a>
+	  <br/>
+      <input  id="btn" class="button" type="submit"   value="Log in"/>
+	  <input  class="button" type="submit" onclick="signup();return false"  value="Register"  />
+     </form>
+    </fieldset>
+</div>
+
+
+<!--validation area ends here-->	
+<h1  style="position:absolute;z-index:2;margin-top:414px;">
+<a name="New game"></a>&gt;New Game</h1>
+   
+<hr>
+
+<img class="WA" src=3.jpg width="800px"/>
+
+<button type="button" id="bn" onclick="display()">Watch Trailer</button>
+
+<video id="trailer" controls >
+<source src="watchdog2.mp4" type="video/mp4">
+  <source src="watchdog2.mp4" type="video/ogg">
+</video> 
+<button id="cancel" type="button" onclick="hide()">X</button>
+
+
+       <h3 id="Overview">Game overview</h3>
+<div id="watch2">
+<div id="Intro">
+        <p>
+          In 2016, ctOS 2.0, an advanced operating system networking city infrastructure, 
+          was implemented in several US cities to create a safer, more efficient metropolis.
+		  </p>
+		  <p>Play as Marcus Holloway, a brilliant young hacker living in the birthplace of the tech revolution, the San Francisco Bay Area. 
+		  Team up with Dedsec, a notorious group of hackers, and expose the hidden dangers of ctOS 2.0, which, in the hands of corrupt corporations, 
+		  is being wrongfully used to monitor and manipulate citizens on a massive scale.
+		  </p>
+        <p>With the power of hacking and Dedsec by your side, launch the Hack of the Century, 
+		take down ctOS 2.0 and give freedom back to whom it belongs: the people.
+		</p>
+        </div>
+        <h2>79.99$<br>
+           Watchdogs2</h2>
+		<h3>Platform:PC,PS4,XBOX ONE
+		    <br>Release date:November 15.2016</h3>
+			
+</div>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+<h1><a name="Hottest sale"></a>>Hottest Sale</h1>
+
+
+<hr>
+<div class="demo">
+<ul>
+<li>
+<a href="#"><img src="Uncharted4.jpg" width="200";
+	               height="270"; onMouseOver="this.width='280'; 
+             this.height='370';" onMouseOut="this.width='200'; this.height='270'">
+			 <span>Uncharted4&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp 
+			 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $79.99</span></a> 
+			 
+			 </li>
+			 
+
+<li><a href="#">
+<img src='gta.jpg' width='270';height='360'; onMouseOver="this.width='280'; 
+             this.height='370';" onMouseOut="this.width='200'; this.height='270'">
+			 <span>GTA5&nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp
+			 &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp &nbsp $40.99</span></a> </li>
+</ul>
+</div>
+
+					 
+
+
+
+</div>
+<div id="footer">
+<h4> About Us/Contact Us/Join Us/
+<br> &nbsp &copy2016 Gamer Galaxy.All Rights Reseved.</h4>
+</div>
+</div>
+
+</div>
+<script>
+
+btn.addEventListener("click",tu,true);
+function tu(){
+if(username.value=="Helen"& password.value=="123456")
+     document.form1.action = "Home.html?" + 
+     document.form1.username.value+ "&" +document.form1.password.value;
+	      			}
+					
+function display(){
+document.getElementById("trailer").style.display = "block";
+document.getElementById("cover").style.display = "block";
+document.getElementById("cancel").style.display = "block";
+
+}
+function hide(){
+  var myVideo = document.getElementsByTagName('video')[0];
+ 
+       
+           myVideo.pause();
+           document.getElementById("trailer").style.display = "none";
+		   document.getElementById("cancel").style.display = "none";
+           document.getElementById("cover").style.display = "none";
+           
+           
+
+}
+
+
+</script>
+</body>
+</html>
+

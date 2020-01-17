@@ -1,0 +1,222 @@
+<html>
+<head>
+<style>
+#wrapper h2:after
+{	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 10px;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), 
+	color-stop(100%,rgba(147,184,189,0))); 
+}
+#wrapper h2{text-align:center;
+            background: -webkit-repeating-linear-gradient(-45deg, 
+	         rgb(18, 83, 93) , 
+	         rgb(18, 83, 93) 20px, 
+	rgb(64, 111, 118) 20px, 
+	rgb(64, 111, 118) 40px, 
+	rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;}
+
+   
+body{background:url("41.jpg") fixed center center no-repeat;
+     background-size: cover;
+     zoom:2;
+	 width:100%;
+	 
+     }
+#wrapper{
+         width:520px;
+		 padding-top:0px;
+		 padding-bottom:10px;
+		 background-color:rgba(205,205,205,0.8);
+         
+}
+
+form
+{
+  width:26%;
+  margin:0px auto;
+  padding:0px;
+}
+
+form div{display;inline;
+        margin:0;
+		font-family:Cambria;
+}
+
+.textInput{
+     margin-top:2px;
+     height:28px;
+	 border: 1px solid #5E6E66;
+}
+
+.btn{
+     padding: 7px;
+	 width:162px;
+	 cursor:pointer;
+	 }
+
+.val_error{
+     color:#FF1F1F
+
+}
+@font-face{
+         font-family:'imooc-icon';
+		 src:url('fonts/icomoon.eot');
+		 src:url('fonts/icomoon.eot?#iefix')format('embedded-opentype')
+             ,url('fonts/icomoon.woff')format('woff')
+			 ,url('fonts/icomoon.ttf')format('truetype')
+			 ,url('fonts/icomoon.svg')format('svg');
+			 
+		font-weight:normal;
+		font-style:normal;
+}
+.imooc-icon{
+         font-family:"imooc-icon";
+		 font-style:normal;
+		 font-weight:normal;
+		 font-style:64px;}
+
+
+
+[data-icon]:after{
+    content: attr(data-icon);
+    color: black ;
+	opacity:0.6;
+	font-family:'imooc-icon';
+        }
+</style>
+
+   </head>
+
+
+<body>
+
+<div id="wrapper">
+<h2 >Sign Up</h2>
+<form onsubmit= "return Validate()" name="vform">
+
+<div>
+<label for="username" class="uname" data-icon="&#xe971;">Your username</label>
+<input id="username"type="text" name="username"  class="textInput" placeholder="&nbsp &nbsp &nbsp Username" >
+<div id="name_error" class="val_error"></div>
+</div>
+
+<div>
+<label for="email" class="youemail" data-icon="&#xe945;"  >Your Email</label>
+<input id="email" type="email" name="email" class="textInput" placeholder="&nbsp &nbsp &nbsp Email">
+
+<div id="email_error" class="val_error"></div>
+</div>
+
+<div>
+<label for="password" class="youpasswd" data-icon="&#xe900;">Your password</label>
+
+
+<input type="password" id="password"  name="password"  " class="textInput" placeholder="&nbsp &nbsp &nbsp Password">
+
+</div>
+
+<div>
+<label for="password_confirmation" class="youpasswdc" data-icon="&#xe901;" >Confirmation</label>
+
+
+<input id="password_confirmation"type="password"  name="password_confirmation"  class="textInput" 
+placeholder="&nbsp &nbsp &nbsp Password confirmation">
+<div id="password_error" class="val_error"></div>
+</div>
+
+<div>
+Gender<br>
+<input type="radio" name="gender" value="male" checked> Male<br>
+      <input type="radio" name="gender" value="female"> Female<br>
+      <input type="radio" name="gender" value="other"> Other<br><br>
+</div>
+
+<input type="submit"  value="Register"  class="btn"  name="Register">
+
+</form>
+   </div>
+    
+
+<script >
+var username = document.forms["vform"]["username"];
+var email = document.forms["vform"]["email"];
+var password = document.forms["vform"]["password"];
+var password_confirmation = document.forms["vform"]["password_confirmation"];
+
+var name_error = document.getElementById("name_error");
+var email_error = document.getElementById("email_error");
+var password_error = document.getElementById("password_error");
+
+
+
+username.addEventListener("blur", nameVerify, true);
+email.addEventListener("blur", emailVerify, true);
+password.addEventListener("blur", passwordVerify, true);
+
+function Validate(){
+        if (username.value==""){
+		    username.style.border="1px solid red";
+            name_error.textContent="Username is required";
+            username.focus();
+            return false;			
+		}
+        if (email.value==""){
+		    email.style.border="1px solid red";
+            email_error.textContent="Email is required";
+            email.focus();
+            return false;			
+		}
+		if (password.value==""){
+		    password.style.border="1px solid red";
+            password_error.textContent="Password is required";
+            password.focus();
+            return false;			
+		}
+	}
+	
+	function nameVerify(){
+	         if(username.value!=""){
+			username.style.border="1px solid #5E6E66";
+            name_error.innerHTML="";
+			return true;
+			 }
+	}
+	function emailVerify(){
+	         if(email.value!=""){
+			email.style.border="1px solid #5E6E66";
+            email_error.innerHTML="";
+			return true;
+			 }
+	}
+	function passwordVerify(){
+	         if(password.value!=""){
+			password.style.border="1px solid #5E6E66";
+            password_error.innerHTML="";
+			return true;
+			 }
+	}
+</script>
+</body>
+</html>
+<!--
+<!--.uname{position:absolute;
+          left:205px;
+	      top:92px;
+	       width:30px;}
+.youemail{position:absolute;
+          left:205px;
+	      top:140px;
+	       width:30px;}
+.youpasswd{position:absolute;
+           left:205px;
+	       top:190px;
+	       width:30px;}
+.youpasswdc{position:absolute;
+           left:205px;
+	       top:237px;
+	       width:30px;}-->

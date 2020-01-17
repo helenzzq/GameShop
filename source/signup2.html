@@ -1,0 +1,488 @@
+<!doctype.html>
+<html>
+<head>
+<link rel="stylesheet" href="layout2.css" media="all"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<style type="text/css">
+#sidebar3{
+	width:200px;
+	height:800px;
+	background:#2EB8BD;
+    float:left;}
+#content_area3{
+	width:800px;
+	height:800px;
+	float:right;
+	 background-color:rgba(205,205,205,0.8);
+}
+#wrapper h2:after
+{	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 10px;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), 
+	color-stop(100%,rgba(147,184,189,0))); 
+	
+}
+#wrapper h2{text-align:center;
+            font-size:50px;
+            background: -webkit-repeating-linear-gradient(-45deg, 
+	         rgb(18, 83, 93) , 
+	         rgb(18, 83, 93) 20px, 
+	rgb(64, 111, 118) 20px, 
+	rgb(64, 111, 118) 40px, 
+	rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;}
+  
+body{
+     background-size: cover;
+      width:100%;
+     }
+#wrapper{
+		 padding-top:0px;
+		 padding-bottom:10px;
+		          
+}
+
+.form2
+{
+  width:43%;
+  margin:0px auto;
+  padding:0px;
+}
+
+.form2 div{display:inline;
+        margin:0;
+		font-family:Cambria;
+}
+.form2 p{font-size:23px;
+         }
+
+.textInput{
+     margin-top:2px;
+     height:28px;
+	 border: 1px solid #5E6E66;
+	 
+}
+
+.btn{
+     padding: 7px;
+	 width:342px;
+	 height:50px;
+	 cursor:pointer;
+	 font-size:20px;
+	 background-color:#14B3C4;
+	 border:none;
+	 color:white;
+	 }
+.btn:hover {background-color:#18C7CD }
+.val_error{
+     color:#FF1F1F
+
+}
+@font-face{
+         font-family:'imooc-icon';
+		 src:url('fonts/icomoon.eot');
+		 src:url('fonts/icomoon.eot?#iefix')format('embedded-opentype')
+             ,url('fonts/icomoon.woff')format('woff')
+			 ,url('fonts/icomoon.ttf')format('truetype')
+			 ,url('fonts/icomoon.svg')format('svg');
+			 
+		font-weight:normal;
+		font-style:normal;
+}
+.imooc-icon{
+         font-family:"imooc-icon";
+		 font-style:normal;
+		 font-weight:normal;
+		 }
+
+[data-icon]:after{
+    content: attr(data-icon);
+    color: black ;
+	opacity:0.6;
+	font-family:'imooc-icon';
+        }
+
+#gender{font-size:20px;
+        padding-left:150px;
+
+}
+.uname{position:absolute;
+          left:1060px;
+	      top:392px;
+	       width:30px;}
+.youemail{position:absolute;
+          left:1059px;
+	      top:426px;
+	      width:30px;}
+.youpasswd{position:absolute;
+          left:1058px;
+	      
+	       top:460px;
+	       width:30px;}
+.youpasswdc{position:absolute;
+           left:1059px;
+	       top:493px;
+	       width:30px;}
+.code{padding-left:160px;}
+
+#codee{padding-left:160px;}
+
+#name_error{background-color:#d45252;
+            color:white;
+			border-radius:3px;
+			padding-left:2px;
+			padding-right:6px;
+            position:absolute;
+			left:1120px;
+	        top:395px;
+			font-size:18px;
+			
+			}
+#email_error{background-color:#d45252;
+            color:white;
+			border-radius:3px;
+			padding-left:2px;
+			padding-right:6px;
+			position:absolute;
+			left:1120px;
+	        top:428px;
+			font-size:18px;
+			}
+#password_error{background-color:#d45252;
+            color:white;
+			border-radius:3px;
+			padding-left:2px;
+			padding-right:6px;
+            position:absolute;
+			left:1120px;
+	        top:460px;
+			font-size:18px;
+			}
+#passwordc_error{background-color:#d45252;
+            color:white;
+			padding-left:2px;
+			padding-right:6px;
+			border-radius:3px;
+            color:white;
+            position:absolute;
+			left:1120px;
+	        top:492px;
+			font-size:18px;
+			}
+#vertification_error{
+            background-color:#d45252;
+            color:white;
+			border-radius:5px;
+			padding-left:2px;
+			padding-right:6px;
+			position:absolute;
+			left:1120px;
+	        top:644px;
+			font-size:18px;
+			}
+#account{color:black;
+         font-family:Californian FB;
+		 padding-left:160px;
+}
+#account a:link{color:black;
+		       text-decoration:none;}
+		      
+	     a:visited{color:black;
+		       }
+		 a:hover{color:purple; 
+		        font-weight:bold; 
+                }
+  </style>
+    </head>
+
+<body>
+<!--Main Container starts here-->
+<div class="main_wrapper">
+
+<!--Header Container starts here-->
+<div class="header_wrapper">
+
+<!--The image shall be sustituted-->
+
+<img id=“banner”； src="84.jpg" width=1000px height=250px;/>
+
+<!--Header Container ends here-->
+
+<!--Navigation bar starts here-->
+<div class="menubar">    
+<ul id="menu">
+<li><a href="Home2.html"><i class="fa fa-home"></i>Home</a>
+<ul>
+<li><a href="Home2.html#New game">New game</a></li>
+<li><a href="Home2.html#Hottest sale">Hottest sale</a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-shopping-bag"></i> All products</a>
+<ul>
+<li><a href="ACT2.html">ACT</a></li>
+<li><a href="SPG2.html">SPG</a></li>
+<li><a href="RPG2.html">RPG</a></li>
+<li><a href="EA2.html">EA</a></li>
+<li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</li>
+<li><a href="signup2.html"><i class="material-icons">assignment_ind</i> Sign Up</a></li>
+<li><a href="#"><i class="fa fa-shopping-cart" ></i>
+Shopping Cart</a></li>
+<li><a href="#">
+<i class="material-icons" >contact_phone</i> Contact Us</a></li>
+
+</ul>
+
+<div id="form";>
+              
+       <form method="get" action="results.php" enctype="multipart/form-data">
+        <input type="text" name="user_query" placeholder="Search a Product" />
+        <input type="submit" name="search" value="Search" />
+		</form>
+		
+		</div>
+</div>
+<!--Navigation bar ends here-->
+
+
+<!--content_wrapper starts here-->
+<div class="content_wrapper">
+
+<!--content_wrapper ends here-->
+
+
+<div id="sidebar3">
+
+
+<div id="sidebar_title">Categories</div>
+
+<ul id="cats">
+
+       <li><a href="ACT2.html">ACT</a></li>
+	    <li><a href="SPG2.html">SPG </a></li>
+	   <li><a href="RPG2.html">RPG</a></li>
+	  
+	   
+	   </ul>
+	    <div id="sidebar_title">Brands</div>
+
+<ul id="cats">
+
+       <li><a href="EA2.html">EA </a></li>
+	   <li><a href="Ubisoft2.html">Ubisoft</a></li>
+
+</ul>
+</div>
+<div id="content_area3">
+<div id="wrapper">
+<h2 >Sign Up</h2>
+
+<form class="form2" method="POST" action="" onsubmit= "return Validate()" name="vform">
+<br/>
+<div>
+<p>
+Your username:<label for="username" class="uname" data-icon="&#xe971;"></label>
+<input id="username"type="text" name="username"  class="textInput" placeholder="Username" >
+<!--<div id="name_error" class="val_error"></div>-->
+
+</div>
+</p>
+<div>
+<p>
+Your Email:&nbsp &nbsp &nbsp &nbsp&nbsp <label for="email" class="youemail" data-icon="&#xe945;"></label>
+
+<input id="email" type="email" name="email" class="textInput" placeholder="Email">
+
+<!--<div id="email_error" class="val_error"></div></p>-->
+
+</div>
+
+<div>
+<p>
+Your password:<label for="password" class="youpasswd" data-icon="&#xe900;"></label>
+
+
+<input type="password" id="password"  name="password"  " class="textInput" placeholder="Password">
+</p>
+</div>
+
+<div>
+<p>
+Confirmation:&nbsp &nbsp <label for="password_confirmation" class="youpasswdc" data-icon="&#xe901;" ></label>
+
+
+<input id="password_confirmation" type="password"  name="password_confirmation"  class="textInput" 
+placeholder="Password confirmation">
+<!--<div id="password_error" class="val_error"></div></p>-->
+
+</div>
+
+
+<div >
+<p>
+
+<label>Date of birth:</label>&nbsp &nbsp &nbsp
+<select aria-label="Month" name="Month" id="Month" ><option value="0" selected="1">Month</option><option value="1">Jan</option><option value="2">Feb</option><option value="3">Mar</option><option value="4">Apr</option><option value="5">May</option><option value="6">Jun</option><option value="7">Jul</option><option value="8">Aug</option><option value="9">Sep</option><option value="10">Oct</option><option value="11">Nov</option><option value="12">Dec</option></select>
+<select aria-label="Day" name="Day" id="Day"><option value="0" selected="1">Day</option><option value="1">1</option><option value="2">2</option><option value="3">3</option><option value="4">4</option><option value="5">5</option><option value="6">6</option><option value="7">7</option><option value="8">8</option><option value="9">9</option><option value="10">10</option><option value="11">11</option><option value="12">12</option><option value="13">13</option><option value="14">14</option><option value="15">15</option><option value="16">16</option><option value="17">17</option><option value="18">18</option><option value="19">19</option><option value="20">20</option><option value="21">21</option><option value="22">22</option><option value="23">23</option><option value="24">24</option><option value="25">25</option><option value="26">26</option><option value="27">27</option><option value="28">28</option><option value="29">29</option><option value="30">30</option><option value="31">31</option></select>
+<select aria-label="Year" name="Year" id="Year" ><option value="0" selected="1">Year</option><option value="2016">2016</option><option value="2015">2015</option><option value="2014">2014</option><option value="2013">2013</option><option value="2012">2012</option><option value="2011">2011</option><option value="2010">2010</option><option value="2009">2009</option><option value="2008">2008</option><option value="2007">2007</option><option value="2006">2006</option><option value="2005">2005</option><option value="2004">2004</option><option value="2003">2003</option><option value="2002">2002</option><option value="2001">2001</option><option value="2000">2000</option><option value="1999">1999</option><option value="1998">1998</option><option value="1997">1997</option><option value="1996">1996</option><option value="1995">1995</option><option value="1994">1994</option><option value="1993">1993</option><option value="1992">1992</option><option value="1991">1991</option><option value="1990">1990</option><option value="1989">1989</option><option value="1988">1988</option><option value="1987">1987</option><option value="1986">1986</option><option value="1985">1985</option><option value="1984">1984</option><option value="1983">1983</option><option value="1982">1982</option><option value="1981">1981</option><option value="1980">1980</option><option value="1979">1979</option><option value="1978">1978</option><option value="1977">1977</option><option value="1976">1976</option><option value="1975">1975</option><option value="1974">1974</option><option value="1973">1973</option><option value="1972">1972</option><option value="1971">1971</option><option value="1970">1970</option><option value="1969">1969</option><option value="1968">1968</option><option value="1967">1967</option><option value="1966">1966</option><option value="1965">1965</option><option value="1964">1964</option><option value="1963">1963</option><option value="1962">1962</option><option value="1961">1961</option><option value="1960">1960</option><option value="1959">1959</option><option value="1958">1958</option><option value="1957">1957</option><option value="1956">1956</option><option value="1955">1955</option><option value="1954">1954</option><option value="1953">1953</option><option value="1952">1952</option><option value="1951">1951</option><option value="1950">1950</option><option value="1949">1949</option><option value="1948">1948</option><option value="1947">1947</option><option value="1946">1946</option><option value="1945">1945</option><option value="1944">1944</option><option value="1943">1943</option><option value="1942">1942</option><option value="1941">1941</option><option value="1940">1940</option><option value="1939">1939</option><option value="1938">1938</option><option value="1937">1937</option><option value="1936">1936</option><option value="1935">1935</option><option value="1934">1934</option><option value="1933">1933</option><option value="1932">1932</option><option value="1931">1931</option><option value="1930">1930</option><option value="1929">1929</option><option value="1928">1928</option><option value="1927">1927</option><option value="1926">1926</option><option value="1925">1925</option><option value="1924">1924</option><option value="1923">1923</option><option value="1922">1922</option><option value="1921">1921</option><option value="1920">1920</option><option value="1919">1919</option><option value="1918">1918</option><option value="1917">1917</option><option value="1916">1916</option><option value="1915">1915</option><option value="1914">1914</option><option value="1913">1913</option><option value="1912">1912</option><option value="1911">1911</option><option value="1910">1910</option><option value="1909">1909</option><option value="1908">1908</option><option value="1907">1907</option><option value="1906">1906</option><option value="1905">1905</option></select>
+
+</p>
+</div>
+<div id="gender">
+      <input type="radio" name="gender" value="male" checked> Male
+      <input type="radio" name="gender" value="female"> Female
+      <input type="radio" name="gender" value="other"> Other<br>
+</div>	
+<div><p>
+Verification code:</p>
+
+<img class="code" src="www.jpg" width="165px" height="50px"/>
+
+<div id="codee">
+<input  id="vertification" type="text" name="vertification"  placeholder="vertification code" size="21px" >
+</div>
+</div>
+<br/><br/>
+<h4 id="account"><a href="Home2.html">Already have an account?</a></h4>
+<input type="submit"  value="Submit"  id="btn"class="btn"  name="Register">
+
+</form>
+<p id="name_error"></p>
+<p id="email_error"></p>
+<p id="password_error"></p>
+<p id="passwordc_error"></p>
+<p id="vertification_error"></p>
+</div>
+</div>
+<div id="footer">
+<h3> About Us/Contact Us/Join Us/
+<br> &nbsp &copy2016 Gamer Galaxy.All Rights Reseved.</h3>
+
+</div>
+</body>
+</html>
+
+<script >
+var username = document.forms["vform"]["username"];
+var email = document.forms["vform"]["email"];
+var password = document.forms["vform"]["password"];
+var password_confirmation = document.forms["vform"]["password_confirmation"];
+var vertification = document.forms["vform"]["vertification"];
+
+var name_error = document.getElementById("name_error") ;
+var email_error = document.getElementById("email_error");
+var password_error = document.getElementById("password_error");
+var passwordc_error = document.getElementById("passwordc_error");
+var vertification_error = document.getElementById("vertification_error");
+
+
+
+username.addEventListener("blur", nameVerify, true);
+email.addEventListener("blur", emailVerify, true);
+password.addEventListener("blur", passwordVerify, true);
+password_confirmation.addEventListener("blur", passwordcVerify, true);
+vertification.addEventListener("blur", vertificationVerify, true);
+
+  
+
+
+function Validate(){
+         
+        if (username.value==""){
+		    username.style.border="1px solid red";
+            document.getElementById("name_error").innerHTML="Username is required";
+            
+            return false;			
+		}
+        if (email.value==""){
+		    email.style.border="1px solid red";
+            document.getElementById("email_error").innerHTML="Email is required";
+            
+            return false;			
+		}
+		if (password.value==""){
+		    password.style.border="1px solid red";
+            document.getElementById("password_error").innerHTML="Password is required";
+            
+            return false;			
+		}
+		if(password_confirmation.value==""){
+		    password_confirmation.style.border="1px solid red";
+            document.getElementById("passwordc_error").innerHTML="Please confirm the password";
+            
+            return false;			
+		}
+		if(password.value != password_confirmation.value&password_confirmation.value!==""){
+		     password_confirmation.style.border="1px solid red";
+             document.getElementById("passwordc_error").innerHTML="The two passwords do not match";
+             
+		   return false;
+		}
+		if (vertification.value==""){
+            vertification.style.border="1px solid red";
+            document.getElementById("vertification_error").innerHTML="vertification code is required";
+	        
+		   return false;
+	    }
+	    if (vertification.value!=="6m44nm" & vertification.value!==""){
+            vertification.style.border="1px solid red";
+            document.getElementById("vertification_error").innerHTML="vertification is not correct";
+	        
+		   return false;
+	    }
+		if (password.value!=="" & vertification.value!==""&password.value!==""&email.value!=="")
+		{
+		alert("Sign up successfully");
+		document.vform.action = "Home.html?" + document.vform.username.value+ "&" +document.vform.password.value;
+	    window.event.returnValue = true;
+		
+		return true;
+		}
+	}	
+	 
+	function nameVerify(){
+	         if(username.value!==""){
+			username.style.border="1px solid #5E6E66";
+            name_error.innerHTML="";
+			return true;
+			 }
+	}
+	function emailVerify(){
+	         if(email.value!=""){
+			email.style.border="1px solid #5E6E66";
+            email_error.innerHTML="";
+			return true;
+			 }
+	}
+	function passwordVerify(){
+	         if(password.value!=""){
+			password.style.border="1px solid #5E6E66";
+            password_error.innerHTML="";
+			return true;
+			 }
+	}
+	function  passwordcVerify(){
+	         if(password_confirmation.value==password.value){
+			password_confirmation.style.border="1px solid #5E6E66";
+            passwordc_error.innerHTML="";
+			return true;
+			 }
+	}
+	function vertificationVerify(){
+	         if(vertification.value=="6m44nm"){
+			vertification.style.border="1px solid #5E6E66";
+            vertification_error.innerHTML="";
+			return true;
+			 }
+	}
+	
+  
+	
+</script>

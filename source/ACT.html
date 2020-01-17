@@ -1,0 +1,1790 @@
+<!doctype.html>
+<html>
+<head>
+<link rel="stylesheet" href="layout2.css" media="all"/>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<script src="shop.js" type="text/javascript"></script>
+<style>
+.uii{
+font-family:Calibri;
+font-weight:bold;
+font-size:20px;
+
+}
+.ttl{
+font-weight:bold;
+
+
+}
+.minus{
+    
+    width: 17px;
+    border: 1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    color: #444;
+
+
+}
+.minus:hover {
+    color: #f50;
+    z-index: 3;
+    border-color: #f60;
+    cursor: pointer;
+}
+.add{
+    
+    width: 17px;
+    border: 1px solid #e5e5e5;
+    background: #f0f0f0;
+    text-align: center;
+    color: #444;
+
+
+}
+.add:hover {
+    color: #f50;
+    z-index: 3;
+    border-color: #f60;
+    cursor: pointer;
+}
+#sl{
+width:40px;
+text-align:center;
+}
+.foot{
+    width: 798px;
+    margin-top: 10px;
+    color: #666;
+    height: 32px;
+	line-height:32px;
+    border: 1px solid #c8c8c8;
+    background-color: #eaeaea;
+    background-image:linear-gradient(RGB(241,241,241),RGB(226,226,226));
+    position: relative;
+    z-index: 8;
+	padding-top:5px;
+}
+
+.foot .select-all {
+
+    width: 100px;
+   
+    padding-left: 5px;
+    color: #666;
+}
+.foot #closing {
+    float:right;
+    border-left: 1px solid #c8c8c8;
+    width:140px;
+    text-align: center;
+    color: #000;
+    font-weight: bold;
+	background: RGB(238,238,238);
+    cursor: pointer;
+	font-size:17px;
+	
+}
+.foot #closing:hover{
+background: -webkit-gradient(linear, left top, left bottom, from(#EEEEEE), to(#FDFDFD));
+
+}
+.foot .total{
+    margin: 0 20px;
+  	float:right;
+}
+.foot  #priceTotal, .foot #selectedTotal {
+    color: red;
+    font-family: arial;
+    font-weight: bold;
+	float:right;
+}
+.foot .selected {
+    
+	float:right;
+}
+
+th {
+    padding-top:3px;
+    background: #e2f2ff;
+    border-top: 3px solid #a7cbff;
+    height: 30px;
+	width:300px;
+}
+.kuan{border:none;
+color:black;
+background-color:white;
+cursor:pointer;
+display:inline;
+font-size:15px;
+}
+.kuan:hover{
+text-decoration:underline;
+
+}
+.kuang{
+margin-bottom:8px;
+margin-left:130px;
+}
+.jg{font-weight:bold;
+
+}
+.btn{
+     padding: 7px;
+	 width:342px;
+	 height:50px;
+	 cursor:pointer;
+	 font-size:20px;
+	 background-color:#14B3C4;
+	 border:none;
+	 color:white;
+	 margin-left:235px;
+	 margin-top:25px;
+	 border-radius:3px;
+	 }
+.btn:hover {background-color:#18C7CD }
+#bill input{width:200px;height:25px;
+      border-radius:4px;
+	  border: 1px solid #ccc}
+select {width:200px;height:25px;
+      border-radius:4px;
+	  border: 1px solid #ccc}
+#card input{width:200px;height:25px;
+      border-radius:4px;
+	  border: 1px solid #ccc}
+#payment {background:transparent url("https://img.alicdn.com/tps/i4/TB1WB4LHXXXXXaSXXXX2AEDJVXX-988-36.png") 0 -22px no-repeat;
+         
+}
+#payment p{display:inline;
+		font-family:Cambria;
+	    font-size:18px;
+		
+		}
+#bill{background:transparent url("https://img.alicdn.com/tps/i4/TB1WB4LHXXXXXaSXXXX2AEDJVXX-988-36.png") 0 -27px no-repeat;
+      padding-top:18px;
+	  font-family:Cambria;
+	  font-size:18px;
+      margin-left:5px;
+}		
+#ci{font-family: GothamBold,Arial,sans-serif;
+    font-style: normal;
+    font-weight: 400;
+    color: #507c9b;
+    font-size: 14px;
+    font-size: 1.4rem;
+    text-transform: uppercase;}
+#si{font-family:Cambria; 
+    font-size:22px;
+	margin-bottom:5px;
+	color: #507c9b;
+    font-size: 1.4rem;
+	}
+#left2{
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:378px
+			
+}
+#left2  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+			 #left2{
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:378px
+			
+}
+#left1{
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:378px
+			
+}
+#left1 a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+
+#right1 {
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:400px
+			
+}
+#right1  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+#right2 {
+            float:left;
+		    color:white;
+			margin:5px;
+			background-color:grey;
+			display:inline-block;
+			width:400px
+			
+}
+#right2  a:link{color:white;
+               text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:none;}
+#bb{background-color:#ff7803;
+    padding:10px;
+	border-radius:7px;
+	font-family:Tahoma;
+	font-size:15px;
+	color:white;
+	z-index:2;
+	cursor:pointer;
+}
+#bb:hover{box-shadow:5px 5px 5px#9C9C9C;
+background: -webkit-gradient(linear, left top, left bottom, from(#ff7803), to(#E96913));
+	background: -moz-linear-gradient(top,  #ff7803,  #E96913);}
+
+		
+#s{font-family:Nueva Std;
+   margin-left:15px;
+   display:inline;   
+   cursor:pointer;
+   border:none;
+   background-color:white;
+   font-size:14px;
+   }
+#j{position:absolute;
+         top:800px;
+		 left:650px;
+         width:350px;
+         background-color:white;
+         box-shadow:5px 5px 5px #9C9C9C;
+		 border-radius:3px;
+		 padding:35px;
+         display:none;
+}  
+
+#s:hover{text-decoration:underline;}
+
+#content_area ul li {display:inline;}
+
+#cel{
+position:absolute;
+top:0px;
+left:394px;
+text-align:center;
+border:none;
+color:black;
+font-size:20px;
+}
+#cel:hover{
+background: -webkit-gradient(linear, left top, left bottom, from(#A6A2A2), to(#848383));
+
+} 
+#pro_error{  
+position:absolute;
+top:320px;
+left:1060px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+
+}
+#city_error {
+
+position:absolute;
+top:350px;
+left:1060px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+
+}
+#zip_error{
+position:absolute;
+top:350px;
+left:1060px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+}
+#address_error{
+position:absolute;
+top:410px;
+left:900px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+}
+#name_error{
+position:absolute;
+top:465px;
+left:770px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+}
+#phone_error{
+position:absolute;
+top:490px;
+left:1040px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+}
+#email_error{
+position:absolute;
+top:490px;
+left:1040px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+}
+#pay_error{
+width:250px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+font-family:Cambria;
+font-size:18px;
+}
+.er p{
+position:absolute;
+top:760px;
+left:1040px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+font-family:Cambria;
+font-size:18px;
+
+}
+.ar p{
+position:absolute;
+top:810px;
+left:1040px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+font-family:Cambria;
+font-size:18px;
+}
+#ccv_error{
+position:absolute;
+top:860px;
+left:840px;
+background-color:#d45252;
+color:white;
+border-radius:3px;
+padding-left:4px;
+padding-right:4px;
+font-family:Cambria;
+font-size:18px;
+}
+ #orderlist p{
+	font-family:Cambria;
+	font-size:22px;
+		
+	}
+</style>
+
+
+
+</head>
+
+
+
+
+<body>
+<!--Main Container starts here-->
+<div class="main_wrapper">
+
+<!--Header Container starts here-->
+<div class="header_wrapper">
+
+<!--The image shall be sustituted-->
+
+<img id=“banner”； src="connect.jpg" width="1000px" height="200px"/>
+
+<!--Header Container ends here-->
+
+<!--Navigation bar starts here-->
+<div class="menubar"> 
+<ul id="menu">
+<li><a href="Home.html"><i class="fa fa-home"></i>Home</a>
+<ul>
+<li><a href="Home2.html#New game">New game</a></li>
+<li><a href="Home2.html#Hottest sale">Hottest sale</a></li>
+</ul>
+</li>
+<li><a href="#"><i class="fa fa-shopping-bag"></i> All products</a>
+<ul>
+<li><a href="ACT.html">ACT</a></li>
+<li><a href="SPG.html">SPG</a></li>
+<li><a href="RPG.html">RPG</a></li>
+<li><a href="#">EA</a></li>
+<li><a href="Ubisoft.html">Ubisoft</a></li>
+
+</ul>
+</li>
+
+
+</li>
+<li id="cit"><a href="#"><i class="fa fa-shopping-cart" ></i>
+Shopping Cart</a></li>
+<li><a href="#">
+<i class="material-icons" >contact_phone</i> Contact Us</a></li>
+<li><a href="Home2.html"><i class="fa fa-sign-out" style="font-size:24px"></i> Sign out</a></li>
+</ul>
+
+<div id="form";>
+              
+       <form method="get" action="results.php" enctype="multipart/form-data">
+        <input type="text" name="user_query" size="18px" placeholder="Search a Product" />
+        <input type="submit" name="search" value="Search" />
+		</form>
+		
+		</div>
+</div>
+<!--Navigation bar ends here-->
+
+
+<!--content_wrapper starts here-->
+<div class="content_wrapper">
+
+<!--content_wrapper ends here-->
+
+
+<div id="sidebar">
+
+
+<div id="sidebar_title">Categories</div>
+
+<ul id="cats">
+
+       <li><a href="ACT.html">ACT</a></li>
+	    <li><a href="SPG.html">SPG </a></li>
+	   <li><a href="RPG.html">RPG</a></li>
+	  
+	   
+	   </ul>
+	    <div id="sidebar_title">Brands</div>
+
+<ul id="cats">
+
+       <li><a href="#">EA </a></li>
+	   <li><a href="Ubisoft.html">Ubisoft</a></li>
+
+</ul>
+</div>
+<div id="content_area" >
+
+<div id="c1"style="display:none;background-color:white;height:1600px;opacity:0.96;">
+<div id="TheCart" >
+<strong style="font-family: Monotype Corsiva;font-size:48px;color:#2AB8F5;">Shopping Cart</strong>
+
+<div style='background:transparent url("https://img.alicdn.com/tps/i4/TB1WB4LHXXXXXaSXXXX2AEDJVXX-988-36.png") 0 -27px no-repeat;'>&nbsp </div>
+
+
+<table>
+<!---->
+<thead>
+<!--select all-->
+        <tr>
+            <th><label><input class="check-all check" type="checkbox"/>&nbsp;Select All</label></th>
+            <th style="width:700px;">Goods</th>
+            <th>Unit Price</th>
+            <th>Amount</th>
+            <th>Subtotal</th>
+            <th></th>
+        </tr>
+    </thead>
+</table>
+<button class="ugly"onclick="back()">Continue Shopping</button>
+<div id="cartItemImages" style="position:relative;left:10px;top:2px;margin-bottom:10px;"></div>
+<div id="cartItemRemove" style=""></div>
+<div id="cartItemPrice" style=""></div>
+<div id="cartItemQuantity" style=""></div>
+<div id="cartItemTotal" style=""></div>
+<div id="sname" style=""></div>
+</div> 
+
+<div class="foot" id="foot">
+<div id="closing"><span>Check out</span></div>
+<label class="select-all"><input type="checkbox" class="check-all check"/>&nbsp;Select All</label>
+    <div class="total" style="display:inline;">Total：$<span id="priceTotal">0.00</span></div>
+
+</div>
+<div id="orderlist"style="margin-left:5px;margin-right:5px;display:none;">
+<p>The Order List</p>
+<div style="border-top: 2px solid #CCC;margin-right:400px;"></div>
+<br/>
+<div id="cname" style=""></div>
+<div id="cquantity" style=""></div>
+<div id="cprice" style=""></div>
+<div id="ctotal" style=""></div>
+
+<div style="border-bottom: 2px solid #CCC;margin-right:400px;"></div>
+<p style="margin-left:260px;">Total:$<span id="pt">0.00</span></p>
+ </div>
+<div id="ships" style="display:none">
+<div style='background:transparent url("https://img.alicdn.com/tps/i4/TB1WB4LHXXXXXaSXXXX2AEDJVXX-988-36.png") 0 -27px no-repeat;'>&nbsp </div>
+<p id="si">1.Shipping Information</p>	
+
+<div id="bill">
+<form method="POST" action="" onsubmit= "return Validate()" name="vform">
+Country:
+<select size="1" name="country">
+    
+    <option value="">Choose a Country</option>
+<option value="Afghanistan">Afghanistan</option>
+<option value="Albania">Albania</option>
+<option value="Algeria">Algeria</option>
+<option value="American Samoa">American Samoa</option>
+<option value="Andorra">Andorra</option>
+<option value="Angola">Angola</option>
+<option value="Anguilla">Anguilla</option>
+<option value="Antarctica">Antarctica</option>
+<option value="Antigua and Barbuda">Antigua and Barbuda</option>
+<option value="Argentina">Argentina</option>
+<option value="Armenia">Armenia</option>
+<option value="Aruba">Aruba</option>
+<option value="Australia">Australia</option>
+<option value="Austria">Austria</option>
+<option value="Azerbaijan">Azerbaijan</option>
+<option value="Bahamas">Bahamas</option>
+<option value="Bahrain">Bahrain</option>
+<option value="Bangladesh">Bangladesh</option>
+<option value="Barbados">Barbados</option>
+<option value="Belarus">Belarus</option>
+<option value="Belgium">Belgium</option>
+<option value="Belize">Belize</option>
+<option value="Benin">Benin</option>
+<option value="Bermuda">Bermuda</option>
+<option value="Bhutan">Bhutan</option>
+<option value="Bolivia">Bolivia</option>
+<option value="Bosnia and Herzegovina">Bosnia and Herzegovina</option>
+<option value="Botswana">Botswana</option>
+<option value="Bouvet Island">Bouvet Island</option>
+<option value="Brazil">Brazil</option>
+<option value="British Indian Ocean Territory">British Indian Ocean Territory</option>
+<option value="Brunei Darussalam">Brunei Darussalam</option>
+<option value="Bulgaria">Bulgaria</option>
+<option value="Burkina Faso">Burkina Faso</option>
+<option value="Burundi">Burundi</option>
+<option value="Cambodia">Cambodia</option>
+<option value="Cameroon">Cameroon</option>
+<option value="Canada" selected="selected">Canada</option>
+<option value="Cape Verde">Cape Verde</option>
+<option value="Cayman Islands">Cayman Islands</option>
+<option value="Central African Republic">Central African Republic</option>
+<option value="Chad">Chad</option>
+<option value="Chile">Chile</option>
+<option value="China">China</option>
+<option value="Christmas Island">Christmas Island</option>
+<option value="Cocos (Keeling) Islands">Cocos (Keeling) Islands</option>
+<option value="Colombia">Colombia</option>
+<option value="Comoros">Comoros</option>
+<option value="Congo">Congo</option>
+<option value="Congo republic">Congo republic</option>
+<option value="Cook Islands">Cook Islands</option>
+<option value="Costa Rica">Costa Rica</option>
+<option value="Croatia">Croatia</option>
+<option value="Cuba">Cuba</option>
+<option value="Cyprus">Cyprus</option>
+<option value="Czech Republic">Czech Republic</option>
+<option value="Denmark">Denmark</option>
+<option value="Djibouti">Djibouti</option>
+<option value="Dominica">Dominica</option>
+<option value="Dominican Republic">Dominican Republic</option>
+<option value="Ecuador">Ecuador</option>
+<option value="Egypt">Egypt</option>
+<option value="El Salvador">El Salvador</option>
+<option value="Equatorial Guinea">Equatorial Guinea</option>
+<option value="Eritrea">Eritrea</option>
+<option value="Estonia">Estonia</option>
+<option value="Ethiopia">Ethiopia</option>
+<option value="Falkland Islands (Malvinas)">Falkland Islands (Malvinas)</option>
+<option value="Faroe Islands">Faroe Islands</option>
+<option value="Fiji">Fiji</option>
+<option value="Finland">Finland</option>
+<option value="France">France</option>
+<option value="French Guiana">French Guiana</option>
+<option value="French Polynesia">French Polynesia</option>
+<option value="French Southern Territories">French Southern Territories</option>
+<option value="Gabon">Gabon</option>
+<option value="Gambia">Gambia</option>
+<option value="Georgia">Georgia</option>
+<option value="Germany">Germany</option>
+<option value="Ghana">Ghana</option>
+<option value="Gibraltar">Gibraltar</option>
+<option value="Greece">Greece</option>
+<option value="Greenland">Greenland</option>
+<option value="Grenada">Grenada</option>
+<option value="Guadeloupe">Guadeloupe</option>
+<option value="Guam">Guam</option>
+<option value="Guatemala">Guatemala</option>
+<option value="Guernsey">Guernsey</option>
+<option value="Guinea">Guinea</option>
+<option value="Guinea-Bissau">Guinea-Bissau</option>
+<option value="Guyana">Guyana</option>
+<option value="Haiti">Haiti</option>
+<option value="Heard Island and Mcdonald Islands">Heard Island and Mcdonald Islands</option>
+<option value="Holy See (Vatican City State)">Holy See (Vatican City State)</option>
+<option value="Honduras">Honduras</option>
+<option value="Hong Kong">Hong Kong</option>
+<option value="Hungary">Hungary</option>
+<option value="Iceland">Iceland</option>
+<option value="India">India</option>
+<option value="Indonesia">Indonesia</option>
+<option value="Iran, Islamic Republic of">Iran, Islamic Republic of</option>
+<option value="Iraq">Iraq</option>
+<option value="Ireland">Ireland</option>
+<option value="Isle of Man">Isle of Man</option>
+<option value="Israel">Israel</option>
+<option value="Italy">Italy</option>
+<option value="Jamaica">Jamaica</option>
+<option value="Japan">Japan</option>
+<option value="Jersey">Jersey</option>
+<option value="Jordan">Jordan</option>
+<option value="Kazakhstan">Kazakhstan</option>
+<option value="Kenya">Kenya</option>
+<option value="Kiribati">Kiribati</option>
+<option value="South Korea">South Korea</option>
+<option value="North Korea">North Korea</option>
+<option value="Kuwait">Kuwait</option>
+<option value="Kyrgyzstan">Kyrgyzstan</option>
+<option value="Lao People's Democratic Republic">Lao People's Democratic Republic</option>
+<option value="Latvia">Latvia</option>
+<option value="Lebanon">Lebanon</option>
+<option value="Lesotho">Lesotho</option>
+<option value="Liberia">Liberia</option>
+<option value="Libyan Arab Jamahiriya">Libyan Arab Jamahiriya</option>
+<option value="Liechtenstein">Liechtenstein</option>
+<option value="Lithuania">Lithuania</option>
+<option value="Luxembourg">Luxembourg</option>
+<option value="Macao">Macao</option>
+
+<option value="Madagascar">Madagascar</option>
+<option value="Malawi">Malawi</option>
+<option value="Malaysia" >Malaysia</option>
+<option value="Maldives">Maldives</option>
+<option value="Mali">Mali</option>
+<option value="Malta">Malta</option>
+<option value="Marshall Islands">Marshall Islands</option>
+<option value="Martinique">Martinique</option>
+<option value="Mauritania">Mauritania</option>
+<option value="Mauritius">Mauritius</option>
+<option value="Mayotte">Mayotte</option>
+<option value="Mexico">Mexico</option>
+<option value="Micronesia, Federated States of">Micronesia, Federated States of</option>
+<option value="Moldova, Republic of">Moldova, Republic of</option>
+<option value="Monaco">Monaco</option>
+<option value="Mongolia">Mongolia</option>
+<option value="Montenegro">Montenegro</option>
+<option value="Montserrat">Montserrat</option>
+<option value="Morocco">Morocco</option>
+<option value="Mozambique">Mozambique</option>
+<option value="Myanmar">Myanmar</option>
+<option value="Namibia">Namibia</option>
+<option value="Nauru">Nauru</option>
+<option value="Nepal">Nepal</option>
+<option value="Netherlands">Netherlands</option>
+<option value="Netherlands Antilles">Netherlands Antilles</option>
+<option value="New Caledonia">New Caledonia</option>
+<option value="New Zealand">New Zealand</option>
+<option value="Nicaragua">Nicaragua</option>
+<option value="Niger">Niger</option>
+<option value="Nigeria">Nigeria</option>
+<option value="Niue">Niue</option>
+<option value="Norfolk Island">Norfolk Island</option>
+<option value="Northern Mariana Islands">Northern Mariana Islands</option>
+<option value="Norway">Norway</option>
+<option value="Oman">Oman</option>
+<option value="Pakistan">Pakistan</option>
+<option value="Palau">Palau</option>
+<option value="Palestinian Territory, Occupied">Palestinian Territory, Occupied</option>
+<option value="Panama">Panama</option>
+<option value="Papua New Guinea">Papua New Guinea</option>
+<option value="Paraguay">Paraguay</option>
+<option value="Peru">Peru</option>
+<option value="Philippines">Philippines</option>
+<option value="Pitcairn">Pitcairn</option>
+<option value="Poland">Poland</option>
+<option value="Portugal">Portugal</option>
+<option value="Puerto Rico">Puerto Rico</option>
+<option value="Qatar">Qatar</option>
+<option value="Reunion">Reunion</option>
+<option value="Romania">Romania</option>
+<option value="Russian Federation">Russian Federation</option>
+<option value="Rwanda">Rwanda</option>
+<option value="Saint Helena">Saint Helena</option>
+<option value="Saint Kitts and Nevis">Saint Kitts and Nevis</option>
+<option value="Saint Lucia">Saint Lucia</option>
+<option value="Saint Pierre and Miquelon">Saint Pierre and Miquelon</option>
+<option value="Saint Vincent and the Grenadines">Saint Vincent and the Grenadines</option>
+<option value="Samoa">Samoa</option>
+<option value="San Marino">San Marino</option>
+<option value="Sao Tome and Principe">Sao Tome and Principe</option>
+<option value="Saudi Arabia">Saudi Arabia</option>
+<option value="Senegal">Senegal</option>
+<option value="Serbia">Serbia</option>
+<option value="Seychelles">Seychelles</option>
+<option value="Sierra Leone">Sierra Leone</option>
+<option value="Singapore">Singapore</option>
+<option value="Slovakia">Slovakia</option>
+<option value="Slovenia">Slovenia</option>
+<option value="Solomon Islands">Solomon Islands</option>
+<option value="Somalia">Somalia</option>
+<option value="South Africa">South Africa</option>
+
+<option value="Spain">Spain</option>
+<option value="Sri Lanka">Sri Lanka</option>
+<option value="Sudan">Sudan</option>
+<option value="Suriname">Suriname</option>
+<option value="Svalbard and Jan Mayen">Svalbard and Jan Mayen</option>
+<option value="Swaziland">Swaziland</option>
+<option value="Sweden">Sweden</option>
+<option value="Switzerland">Switzerland</option>
+<option value="Syrian Arab Republic">Syrian Arab Republic</option>
+<option value="Taiwan">Taiwan</option>
+<option value="Tajikistan">Tajikistan</option>
+<option value="Tanzania, United Republic of">Tanzania, United Republic of</option>
+<option value="Thailand">Thailand</option>
+<option value="Timor-Leste">Timor-Leste</option>
+<option value="Togo">Togo</option>
+<option value="Tokelau">Tokelau</option>
+<option value="Tonga">Tonga</option>
+<option value="Trinidad and Tobago">Trinidad and Tobago</option>
+<option value="Tunisia">Tunisia</option>
+<option value="Turkey">Turkey</option>
+<option value="Turkmenistan">Turkmenistan</option>
+<option value="Turks and Caicos Islands">Turks and Caicos Islands</option>
+<option value="Tuvalu">Tuvalu</option>
+<option value="Uganda">Uganda</option>
+<option value="Ukraine">Ukraine</option>
+<option value="United Arab Emirates">United Arab Emirates</option>
+<option value="United Kingdom">United Kingdom</option>
+<option value="United States">United States</option>
+<option value="United States Minor Outlying Islands">United States Minor Outlying Islands</option>
+<option value="Uruguay">Uruguay</option>
+<option value="Uzbekistan">Uzbekistan</option>
+<option value="Vanuatu">Vanuatu</option>
+<option value="Venezuela">Venezuela</option>
+<option value="Viet Nam">Viet Nam</option>
+<option value="Virgin Islands, British">Virgin Islands, British</option>
+<option value="Virgin Islands, U.S.">Virgin Islands, U.S.</option>
+<option value="Wallis and Futuna">Wallis and Futuna</option>
+<option value="Western Sahara">Western Sahara</option>
+<option value="Yemen">Yemen</option>
+<option value="Zambia">Zambia</option>
+<option value="Zimbabwe">Zimbabwe</option>
+
+</select>
+
+Province:<input id="province"name="province"type="text" placeholder=" Province"style="margin-left:4px;margin-bottom:2px;">
+
+</br>
+City:<input id="city"name="city" type="text" placeholder=" City"style="margin-left:36px;">
+
+Zip:<input id="zip" name="zip" type="text" placeholder=" Zip"style="margin-left:46px;"></br>
+Address:
+</br><textarea name="address"id="ta"rows="4" cols="50" style="margin-top:5px;margin-left:70px;" disabled="disabled"></textarea>
+</br>
+Name:<input  name="namey"type="text" placeholder=" Name" style="margin-left:17px;margin-bottom:2px;">
+</br>
+Phone:<input name="phone"type="text" placeholder=" Phone"style="margin-left:15px;">
+E-Mail:<input name="email"type="text" placeholder=" E-Mail"style="margin-left:14px"></br>
+</form>
+
+
+<p id="pro_error"></p>
+<p id="city_error"></p>
+<p id="address_error"></p>
+<p id="zip_error"></p>
+<p id="name_error"></p>
+<p id="phone_error"></p>
+<p id="email_error"></p>
+
+</div>
+<div style='background:transparent url("https://img.alicdn.com/tps/i4/TB1WB4LHXXXXXaSXXXX2AEDJVXX-988-36.png") 0 -27px no-repeat;margin-top:10px;'>&nbsp </div>
+
+
+<p id="si">2.Payment</p>
+<p id="pay_error"></p>
+<div id="payment">
+
+</br>
+<form name="sform" method="POST" action="" onsubmit="return Validate()">
+<input id="hi" type="radio"onclick="check1(this)"><p>Paypal</p>
+<input id="may"type="radio" style="margin-left:190px;"onclick="check2(this)"><p>Alipay</p>
+<input id="hey"type="radio" style="margin-left:200px;"onclick="check3(this)"><p>Credit</p>
+
+</br>
+<img src="paypal.png" style="width:200px;margin-left:17px;">
+<img src="556.jpg"style="width:200px;margin-left:42px;">
+<img src="4562.png" style="width:300px;height:80px;margin-left:20px;">
+
+<br><br>
+
+<div id="card" style="display:none;">
+<span id="ci">Card Information</span><br>
+<p style="margin-top:10px;margin-left:3px;">Card Number:</p>
+<p style="margin-top:10px;margin-left:112px;">Card Type:</p><br>
+<input name="cn" type="text" placeholder=" Card Number"style="margin-left:2px;">
+<select name="cardtype"id="cardType" style="margin-left:20px;">
+<option value="" class="">&nbsp;</option><option value="Visa" selected="selected">Visa</option><option value="Visa Debit">Visa Debit</option><option value="Mastercard">Mastercard</option><option value="American Express">American Express
+</option>
+</select>
+<br>
+<p style="margin-top:10px;margin-left:3px;">Expiry Month</p>
+<p style="margin-top:10px;margin-left:112px;">Expiry Year</p><br>
+
+<select id="month"style="margin-left:2px;"><option value="" class="">&nbsp;</option><option value="1">1</option>
+<option value="2">2</option>
+<option value="3">3</option>
+<option value="4">4</option>
+<option value="5">5</option>
+<option value="6">6</option>
+<option value="7">7</option>
+<option value="8">8</option>
+<option value="9">9</option>
+<option value="10">10</option>
+<option value="11">11</option>
+<option value="12">12</option>
+</select>
+<select id="year"style="margin-left:20px;">
+<option value="" class="">&nbsp;</option>
+<option value="2016">2016</option>
+<option value="2017">2017</option>
+<option value="2018">2018</option>
+<option value="2019">2019</option>
+<option value="2020">2020</option>
+<option value="2021">2021</option>
+<option value="2022">2022</option>
+<option value="2023">2023</option>
+<option value="2024">2024</option>
+<option value="2025">2025</option>
+</select>
+<br>
+<p style="margin-top:10px;margin-left:3px;">CCV</p><br>
+<input name="ccv"type="text" style="margin-left:3px;width:200px">
+<br>
+<img src="897.png">
+</div>
+
+<input id="happy" name="total" type="text" style="display:none;">
+
+<div class="er">
+<p id="cn_error"></p>
+<p id="ct_error"></p>
+</div>
+<div class="ar">
+<p id="month_error"></p>
+<p id="year_error"></p>
+</div>
+<p id="ccv_error"></p>
+
+<div style='background:transparent url("https://img.alicdn.com/tps/i4/TB1WB4LHXXXXXaSXXXX2AEDJVXX-988-36.png") 0 -27px no-repeat;margin-top:10px;'>&nbsp </div>
+
+<input type="submit"  value="Submit"  id="btn" class="btn" onclick="return Validate()">
+</form>
+</div>
+
+
+</div>
+</div>
+<div id="scp" >
+
+<h1>>AVG</h1>
+
+<hr>
+
+<div id="tlou" data-price="29.96" data-name="The Last of Us"style="display:inline;">
+
+<img src="tlou.jpg" width="380px" height="420px"/></div>
+<div id="gta2" data-price="19.99" data-name="GTA5"style="display:inline;">
+<img src="gta2.jpg" width="410px" height="420px"/></div>
+
+<div id="left1">
+     <h2>$29.96 &nbsp &nbsp &nbsp &nbsp&nbsp <a href="#right1"><button id="ct" onclick='shop("tlou")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></a></h2>
+        <h3><a href="#" >The Last Of Us</a></h3>
+		<h3>Platform:PC,PS4,PS3</h3>
+    </div>
+
+<div id="right1">
+     <h2>$19.99&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp <a href="#right1"><button id="ct" onclick='shop("gta2")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></a></h2>
+        <h3><a href="#">GTA5</a></h3>
+		<h3>Platform:PC,PS4,XBOX ONE</h3>
+    </div>
+<div id="Uncharted4" data-price="54.99" data-name="Uncharted4" style="display:inline;">		
+<img src="Uncharted4.jpg" width="380px" height="460px"/></div>
+<div id="cs" data-price="12.99" data-name="CSGO" style="display:inline;">	
+<img src="cs.png" width="410px" height="460px"/></div>
+
+<div id="left2">
+     <h2>$54.99 &nbsp &nbsp &nbsp &nbsp&nbsp <a href="#right1"><button id="ct" onclick='shop("Uncharted4")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></a></h2>
+        <h3><a href="#" >Uncharted4</a></h3>
+		<h3>Platform:PS4</h3>
+    </div>
+
+<div id="right2">
+     <h2>$12.99&nbsp &nbsp &nbsp &nbsp &nbsp&nbsp <a href="#right1"><button id="ct" onclick='shop("cs")'><i class="fa fa-shopping-cart" ></i> Add to Cart</button></a></h2>
+        <h3><a href="#">CS Go</a></h3>
+		<h3>Platform:PC,PS3,XBOX ONE</h3>
+    </div>
+
+
+<div id="j">
+<img src="tick.jpg" width="50"/>
+<p style="display:inline;position:absolute;top:18px;font-family:Sitka Text;font-size:20px;"> 
+Adding successfully!</p>
+
+<a href="#c1"><button id="bb" onclick="jump()">Proceed to check out</button></a><button id="s" onclick="m()">Continue shopping</button></br></br>
+
+
+<button id="cel" onclick="m()">X</button>
+</div>
+</div>
+
+
+
+
+
+	
+
+</div>
+</div>
+
+</div>
+
+<div id="footer">
+<h3> About Us/Contact Us/Join Us/
+<br> &nbsp &copy2016 Gamer Galaxy.All Rights Reseved.</h3>
+
+</div>
+</body>
+</html>
+<script>
+var ivy=document.getElementById("closing");
+var cit=document.getElementById("cit");
+
+ivy.addEventListener("click",whs,true);
+cit.addEventListener("click",jump,true);
+
+//check out successfully
+function whs(){
+var pv=document.getElementById("pt");
+var price=0;
+var node=document.getElementById("cartItemImages");
+var TheCartItemTotal = document.getElementById("cartItemTotal");
+var gy=node.getElementsByTagName("input");
+var kk=TheCartItemTotal.getElementsByTagName('div');
+
+
+for (var i=0;i<kk.length;i++){
+
+if(gy[i].checked){
+
+document.getElementById("TheCart").style.display="none";
+document.getElementById("foot").style.display="none";
+document.getElementById("ships").style.display="block";
+
+}
+
+
+}
+
+if(gy.length=1&!gy[0].checked){
+
+alert("You haven't choose all the goods!");
+
+} 
+if(gy.length=2&!gy[1].checked&!gy[2].checked){
+
+alert("You haven't choose all the goods!");
+
+
+}
+if(gy.length=3&!gy[0].checked&!gy[1].checked&!gy[2].checked){
+
+alert("You haven't choose all the goods!");
+
+
+}
+if(gy.length=4&!gy[0].checked&!gy[1].checked&!gy[2].checked&!gy[3].checked){
+
+alert("You haven't choose all the goods!");
+
+
+}
+}
+
+
+//Calculate the full total
+function total(){
+
+var TheCartItemTotal = document.getElementById("cartItemTotal");
+var node=document.getElementById("cartItemImages");
+var gy=node.getElementsByTagName("input");
+
+var kk=TheCartItemTotal.getElementsByTagName('div');
+var pt=document.getElementById("priceTotal");
+var price=0;
+
+
+for (var i=0;i<kk.length;i++){
+
+if (gy[i].checked){
+
+price+= parseFloat(kk[i].innerHTML);
+pt.innerHTML= price.toFixed(2);
+
+}
+
+
+if(!gy[i].checked){
+
+pt.innerHTML= price.toFixed(2);
+
+}
+
+if(price<0){
+price=0;
+pt.innerHTML=price.toFixed(2);
+
+}
+
+}
+
+}
+
+//Add the price object 
+function AddPriceObject(itemToPrice){
+var TheCartItemPrice = document.getElementById("cartItemPrice");
+var TheCartItem=document.getElementById("CartItem"+itemToPrice);
+var ThePriceDiv=document.createElement("div");
+var Thetotaldiv=document.createElement("span");
+var price=TheCartItem.getAttribute("data-price");
+var ThePrice=document.createTextNode(price);
+
+
+
+ThePriceDiv.id='PriceItem'+itemToPrice;
+ThePriceDiv.appendChild(ThePrice);
+TheCartItemPrice.appendChild(ThePriceDiv);
+
+ThePriceDiv.setAttribute("class","jg");
+
+
+
+}
+
+//Adding subtotal
+function axa(item){
+
+
+var TheCartItemTotal = document.getElementById("cartItemTotal");
+var TheCartItemQuantity = document.getElementById("cartItemQuantity");
+var TheCartItemPrice = document.getElementById("cartItemPrice");
+var TheCartItems=document.getElementById("CartItem"+item);
+var ty=document.getElementById("tlItem"+item);
+var pe=TheCartItems.getAttribute("data-price");
+var price=0;
+var yy=document.getElementById('QuantityItem'+item);
+
+var qu=yy.getElementsByTagName("input")[0].value;
+price=qu*pe;
+ty.innerHTML=price.toFixed(2);   
+
+
+}
+
+
+function AddQuantityObject(item){
+var TheCartItemQuantity = document.getElementById("cartItemQuantity");
+var TheQuantityDiv=document.createElement("div");
+var TheQuantity=document.createElement("input");
+
+
+TheQuantity.setAttribute("id","sl");
+TheQuantity.value="1";
+
+
+TheQuantityDiv.id='QuantityItem'+item;
+TheQuantityDiv.appendChild(TheQuantity);
+TheCartItemQuantity.appendChild(TheQuantityDiv);
+
+var vv=TheCartItemQuantity.getElementsByTagName('input');
+
+
+//set the bottom line of the price
+for (i=0;i<vv.length;i++){
+
+
+TheCartItemQuantity.getElementsByTagName('input')[i].onkeyup = function () {
+            
+            var val = parseInt(this.value);
+            if (isNaN(val) || val <= 0) {
+                val = 1;
+            }
+            if (this.value != val) {
+                this.value = val;
+            }
+			
+			
+            axa(item);
+			
+        }
+    }
+
+}
+
+//Add subtotal
+function AddTotalObject(item){
+var TheCartItemTotal = document.getElementById("cartItemTotal");
+var TheCartItemQuantity = document.getElementById('cartItemQuantity');
+var TheCartItems=document.getElementById("CartItem"+item);
+var pc=TheCartItems.getAttribute("data-price");
+var ttl=document.createElement("div");
+var ty=TheCartItemTotal.getElementsByTagName("div");
+
+ttl.id="tlItem"+item;
+ttl.setAttribute("class","ttl");
+var tt=document.getElementById("tlItem"+item);
+var yy=document.getElementById('QuantityItem'+item);
+TheCartItemTotal.appendChild(ttl);
+
+var qu=yy.getElementsByTagName("input")[0];
+var yui=(qu.value*pc).toFixed(2);
+var tl=document.createTextNode(yui);
+
+
+
+ttl.appendChild(tl);
+
+
+}
+
+//remove product
+function RemoveCartItem(item){
+
+         var obj =document.getElementById('CartItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 obj=document.getElementById('RemoveItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 
+		 obj=document.getElementById('PriceItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 
+		 obj=document.getElementById('QuantityItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 
+		 obj=document.getElementById('calItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 
+		 obj=document.getElementById('tlItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 
+		 obj=document.getElementById('nmItem'+item);
+		 obj.parentNode.removeChild(obj);
+		 
+		 show();
+         total();
+         jn(item);
+}
+function AddRemoveObject(itemToRemove){
+         var TheCartItemRemove =document.getElementById('cartItemRemove');
+		 var TheRemoveDiv =document.createElement('div');
+		 var TheRemovebutton =document.createElement("button");
+		 var df = document.createTextNode("Remove");
+		
+		 
+		 TheRemoveDiv.id='RemoveItem'+itemToRemove;
+		 TheRemovebutton.setAttribute("class","kuan");
+		 TheRemovebutton.onclick=function(){RemoveCartItem(itemToRemove);};
+		 TheRemovebutton.appendChild(df);
+		 TheRemoveDiv.appendChild(TheRemovebutton);
+		 TheCartItemRemove.appendChild(TheRemoveDiv);
+		
+		
+
+
+} 
+
+//dynamic setting of the  product
+function show(){
+ var TheCartItemRemove=document.getElementById('cartItemRemove');
+ var s=TheCartItemRemove.getElementsByTagName('div');
+ var TheCartItemPrice=document.getElementById('cartItemPrice');
+ var t=TheCartItemPrice.getElementsByTagName('div');
+ var TheCartItemQuantity=document.getElementById('cartItemQuantity');
+ var q=TheCartItemQuantity.getElementsByTagName('div');
+ var ThecartItemImages=document.getElementById('cartItemImages');
+ var b=ThecartItemImages.getElementsByTagName("input");
+ var ca=ThecartItemImages.getElementsByTagName("span");
+ var ja=ThecartItemImages.getElementsByTagName("p");
+ var ThecartItemtotal=document.getElementById('cartItemTotal');
+ var kk=ThecartItemtotal.getElementsByTagName('div');
+ var namee=document.getElementById('sname');
+ var uu=namee.getElementsByTagName('div');
+
+	for(i=0;i<s.length;i++){
+    s[i].style.position="absolute";
+    s[i].style.top=(110*i)+410+"px";
+	s[i].style.left=(1180)+"px";
+    t[i].style.position="absolute";
+    t[i].style.top=(110*i)+410+"px";
+	t[i].style.left=(850)+"px";
+    q[i].style.position="absolute";
+    q[i].style.top=(110*i)+410+"px";
+	q[i].style.left=(980)+"px";
+	b[i].style.position="absolute";
+    b[i].style.top=(110*i)+40+"px";
+	b[i].style.left=(45)+"px";
+	ca[i].style.position="absolute";
+    ca[i].style.top=(110*i)+33+"px";
+	ca[i].style.left=(494)+"px";
+	ja[i].style.position="absolute";
+    ja[i].style.top=(110*i)+33+"px";
+	ja[i].style.left=(550)+"px";
+	kk[i].style.position="absolute";
+    kk[i].style.top=(110*i)+410+"px";
+	kk[i].style.left=(1090)+"px";
+	uu[i].style.position="absolute";
+    uu[i].style.top=(110*i)+410+"px";
+	uu[i].style.left=(705)+"px";
+  }
+ }
+ 
+function name(item){
+var names=document.getElementById("sname");
+var itsm=document.getElementById(item);
+var ui=itsm.getAttribute("data-name");
+var uii=document.createElement("div");
+var iu=document.createTextNode(ui);
+
+uii.setAttribute("class","uii");
+uii.appendChild(iu);
+uii.id='nmItem'+item;
+names.appendChild(uii);
+}
+
+//add and minus add-event listener
+function jn(item){
+
+var TheCartItems=document.getElementById('calItem'+item);
+var TheCartItemQuantity = document.getElementById("cartItemQuantity");
+var ThecartItemImages=document.getElementById('cartItemImages');
+var iop=TheCartItems.getElementsByTagName("p")[0];
+var iv=TheCartItems.getElementsByTagName("span")[0];
+var ipt=TheCartItemQuantity.getElementsByTagName("input");
+var yy=document.getElementById('QuantityItem'+item);
+var qu=yy.getElementsByTagName("input")[0];
+
+ if (window.addEventListener) { 
+
+iop.addEventListener("click",function(){additiona(item)},true);
+
+iv.addEventListener("click",function(){subtracta(item)},true);
+
+}
+
+
+}
+
+function xuan(){
+ var selectInputs = document.getElementsByClassName('check'); // All the select inputs
+ var checkAllInputs = document.getElementsByClassName('check-all');
+   for(var i = 0; i < selectInputs.length; i++ ){
+        selectInputs[i].onclick = function () {
+            if (this.className.indexOf('check-all') >= 0) { //If you choose select all then all the select-all input box will be checked
+                for (var j = 0; j < selectInputs.length; j++) {
+                    selectInputs[j].checked = this.checked;
+                }
+            }
+            if (!this.checked) { //As long as one of the input box isn't checked, the select-all input box will be unchecked
+                for (var i = 0; i < checkAllInputs.length; i++) {
+                    checkAllInputs[i].checked = false;
+					                }
+            }
+           total(); 
+        }
+    }
+
+}
+
+//subtract
+function subtracta(item){
+var TheCartItems=document.getElementById("CartItem"+item);
+var TheCartItemQuantity = document.getElementById("cartItemQuantity");
+var yy=document.getElementById('QuantityItem'+item);
+var ipt=yy.getElementsByTagName("input")[0];
+var val=parseInt(ipt.value);
+
+if(val<=0){
+val=0;
+
+}
+if(val>=1){
+ipt.value= val-1;
+
+}
+
+axa(item);
+total();
+
+}
+
+//addition
+function additiona(item){
+var TheCartItems=document.getElementById("CartItem"+item);
+var TheCartItemQuantity = document.getElementById("cartItemQuantity");
+var yy=document.getElementById('QuantityItem'+item);
+var ipt=yy.getElementsByTagName("input")[0];
+var val=parseInt(ipt.value);
+
+ipt.value= val+1;
+axa(item);
+total();
+}
+
+
+//Add product image to the shopping cart
+function shop(itemToadd){
+
+document.getElementById('j').style.display="block";
+var itm=document.getElementById(itemToadd);
+var itms=itm.cloneNode(true); 
+var node=document.getElementById("cartItemImages");
+var dv=document.createElement("div");
+var ip=document.createElement("input");
+var jia=document.createElement("p");
+var jian=document.createElement("span");
+var st=document.createTextNode("-");
+var ad=document.createTextNode("+");
+
+
+var bigdiv=document.getElementById("c1");
+var foundnodecount = findifidexists(node, "CartItem" + itemToadd);
+
+
+if (foundnodecount === 0) {
+dv.id='calItem'+itemToadd;
+
+itms.childNodes[1].height=100;
+itms.childNodes[1].width=100;
+
+dv.setAttribute("class","kuang");
+itms.id='CartItem'+itemToadd;
+
+ip.type="checkbox";
+ip.setAttribute("class","check");
+
+jia.setAttribute("class","add");
+jian.setAttribute("class","minus");
+
+
+jian.appendChild(st);
+jia.appendChild(ad);
+
+
+dv.appendChild(jian);
+dv.appendChild(jia);
+dv.appendChild(ip);
+dv.appendChild(itms);
+
+node.appendChild(dv);
+
+AddRemoveObject(itemToadd);
+AddPriceObject(itemToadd);
+AddQuantityObject(itemToadd);
+name(itemToadd);
+
+AddTotalObject(itemToadd);
+xuan();
+jn(itemToadd);
+}
+
+else{
+var cathy=document.getElementById("QuantityItem"+itemToadd).getElementsByTagName("input")[0];
+cathy.value = parseInt(cathy.value) + 1 ; }
+axa(itemToadd);
+show();
+total();
+
+}
+
+///add same product-->direct add the amount
+function findifidexists(obj, id) 
+{
+              var content = document.getElementById("c1");
+              var thenodelist = content.getElementsByTagName('div');
+              for (nodenumber = 0; nodenumber < thenodelist.length; nodenumber++) {
+                  if (thenodelist[nodenumber].id === id) {
+                      return nodenumber + 1;
+                  }       
+              }
+              return 0;
+			  }
+
+//show the shopping cart			  
+function jump(){
+document.getElementById('scp').style.display="none";
+document.getElementById('c1').style.display="block";
+
+}
+function m(){
+document.getElementById('j').style.display="none";
+}
+
+//block the shopping cart
+function back(){
+document.getElementById('c1').style.display='none';
+document.getElementById('scp').style.display="block";
+document.getElementById('j').style.display="none";
+}
+</script>
+<script>
+var city =document.getElementById("city");
+var province =document.getElementById("province");
+var zip =document.getElementById("zip");
+var tempradio= null; 
+var lazy=document.getElementById("payment").getElementsByTagName("input");
+
+city.addEventListener("blur", s, true);
+province.addEventListener("blur", s, true);
+zip.addEventListener("blur", s, true);	
+
+var pp = document.forms["vform"]["province"];
+var email = document.forms["vform"]["email"];
+var zp = document.forms["vform"]["zip"];
+var address = document.forms["vform"]["address"];
+var ciy = document.forms["vform"]["city"];
+var phone=document.forms["vform"]["phone"];
+var namey = document.forms["vform"]["namey"];
+var cn=document.forms["sform"]["cn"];
+var ccv=document.forms["sform"]["ccv"];
+var month=document.forms["sform"]["month"];
+var ct=document.forms["sform"]["cardtype"];
+
+var year=document.getElementById("year");
+var name_error = document.getElementById("name_error") ;
+var email_error = document.getElementById("email_error");
+var pro_error = document.getElementById("pro_error");
+var city_error = document.getElementById("city_error");
+var phone_error = document.getElementById("phone_error");
+var zip_error = document.getElementById("zip_error");
+var address_error = document.getElementById("address_error");
+var pay_error=document.getElementById("pay_error");
+var cn_error=document.getElementById("cn_error");
+var ccv_error=document.getElementById("ccv_error");
+var year_error=document.getElementById("year_error");
+var month_error=document.getElementById("month_error");
+var ct_error=document.getElementById("ct_error");
+
+
+//add event
+namey.addEventListener("blur", nameVerify, true);
+email.addEventListener("blur", emailVerify, true);
+zp.addEventListener("blur", zipVerify, true);
+pp.addEventListener("blur", provinceVerify, true);
+ciy.addEventListener("blur", cityVerify, true);
+phone.addEventListener("blur", phoneVerify, true);
+address.addEventListener("blur", addressVerify, true);
+lazy[0].addEventListener("blur", payVerify, true);
+lazy[1].addEventListener("blur", payVerify, true);
+lazy[2].addEventListener("blur", payVerify, true); 
+cn.addEventListener("blur", cnVerify, true); 
+ccv.addEventListener("blur", ccvVerify, true);  
+ct.addEventListener("blur", ctVerify, true);  
+month.addEventListener("blur", monthVerify, true);
+year.addEventListener("blur", yearVerify, true);
+
+
+
+
+function Validate(){
+if (pp.value==""){
+		    pp.style.border="1px solid red";
+            document.getElementById("pro_error").innerHTML="Province is required";
+            
+            return false;			
+		}
+		if(ciy.value==""){
+		     ciy.style.border="1px solid red";
+             document.getElementById("city_error").innerHTML="City is required";
+             
+		   return false;
+		}
+		if (zp.value==""){
+		    zp.style.border="1px solid red";
+            document.getElementById("zip_error").innerHTML="Zip is required";
+            
+            return false;			
+		}
+		if(address.value==""){
+		    address.style.border="1px solid red";
+            document.getElementById("address_error").innerHTML="Address is required";
+            
+            return false;			
+		}
+		if (namey.value==""){
+            namey.style.border="1px solid red";
+            document.getElementById("name_error").innerHTML="Name is required";
+	        
+		   return false;
+	    }
+	    if (phone.value==""){
+            phone.style.border="1px solid red";
+            document.getElementById("phone_error").innerHTML="Phone number is required";
+	        
+		   return false;
+	    }
+        if (email.value==""){
+		    email.style.border="1px solid red";
+            document.getElementById("email_error").innerHTML="Email is required";
+            
+            return false;			
+		}
+        if(!lazy[0].checked&!lazy[1].checked&!lazy[2].checked){
+		lazy[0].style.border="1px solid red";lazy[1].style.border="1px solid red";lazy[2].style.border="1px solid red";
+		document.getElementById("pay_error").innerHTML="Please choose the payment!";
+		
+		}		
+		if (pp.value!=="" & zp.value!==""&address.value!==""&ciy.value!==""&namey.value!==""&phone.value!==""&email.value!==""&(lazy[0].checked||lazy[1].checked))
+		{
+		window.assign="ACT.html";
+		alert("Payment Successfully!");
+		
+		
+		return true;
+		}
+		if(lazy[2].checked&cn.value==""){
+		cn.style.border="1px solid red";
+        document.getElementById("cn_error").innerHTML="Cart Number is required";
+		return false;
+		
+		
+		}
+		if(lazy[2].checked&ct.value==""){
+		ct.style.border="1px solid red";
+		document.getElementById("ct_error").innerHTML="Cart Type is required";
+		return false;
+		}
+		if(lazy[2].checked&month.value==""){
+		month.style.border="1px solid red";
+		document.getElementById("month_error").innerHTML="Expiry month is required";
+		return false;
+		}
+		if(lazy[2].checked&year.value==""){
+		year.style.border="1px solid red";
+        document.getElementById("year_error").innerHTML="Expiry year is required";
+		return false;
+		}
+		if(lazy[2].checked&ccv.value==""){
+		ccv.style.border="1px solid red";
+        document.getElementById("ccv_error").innerHTML="CCV is required";
+		return false;
+		}
+		if (pp.value!=="" & zp.value!==""&address.value!==""&ciy.value!==""&namey.value!==""&phone.value!==""&email.value!==""&lazy[2].checked&ccv.value!=""&ct.value!=""&month.value!=""&year.value!=""&cn.value!="")
+		{
+         var pt=document.getElementById("priceTotal");
+         var happy=document.getElementById("happy");
+		 happy.value=pt.innerHTML;
+		 document.sform.action = "789.html?" + document.sform.cn.value+ "&" +document.sform.cardtype.value+ "&" +document.sform.total.value;
+		 
+		window.event.returnValue = true;
+		return true;
+		}
+		
+		
+	
+}
+	function phoneVerify(){
+	         if(phone.value!==""){
+			phone.style.border="2px solid #6BC7DE";
+            phone_error.innerHTML="";
+			return true;
+			 }
+	}
+	function zipVerify(){
+	         if(zp.value!=""){
+			zp.style.border="2px solid #6BC7DE";
+            zip_error.innerHTML="";
+			return true;
+			 }
+	}
+	function provinceVerify(){
+	         if(pp.value!=""){
+			pp.style.border="2px solid #6BC7DE";
+            pro_error.innerHTML="";
+			return true;
+			 }
+	}
+	function  cityVerify(){
+	         if(ciy.value!=""){
+			ciy.style.border="2px solid #6BC7DE";
+            city_error.innerHTML="";
+			return true;
+			 }
+	}
+	function addressVerify(){
+	         if(address.value!=""){
+			address.style.border="2px solid #6BC7DE";
+            address_error.innerHTML="";
+			return true;
+			 }
+	}
+	function nameVerify(){
+	         if(namey.value!==""){
+			namey.style.border="2px solid #6BC7DE";
+            name_error.innerHTML="";
+			return true;
+			 }
+	}
+	function emailVerify(){
+	         if(email.value!=""){
+			email.style.border="2px solid #6BC7DE";
+            email_error.innerHTML="";
+			return true;
+			 }
+	}
+    function payVerify(){
+	if(lazy[0].checked||lazy[1].checked||lazy[2].checked){
+	 pay_error.innerHTML="";
+	
+	
+	}
+}
+	function cnVerify(){
+	         if(cn.value!=""){
+			cn.style.border="2px solid #6BC7DE";
+            cn_error.innerHTML="";
+			return true;
+			 }
+	}
+	function ctVerify(){
+	         if(ct.value!=""){
+			 ct.style.border="2px solid #6BC7DE";
+			ct_error.innerHTML="";
+			return true;
+			 }
+	}
+	function monthVerify(){
+	         if(month.value!=""){
+			 month.style.border="2px solid #6BC7DE";
+             month_error.innerHTML="";
+			return true;
+			 }
+	}
+	function yearVerify(){
+	         if(year.value!=""){
+			 year.style.border="2px solid #6BC7DE";
+             year_error.innerHTML="";
+			return true;
+			 }
+	}
+	function ccvVerify(){
+	         if(ccv.value!=""){
+			 ccv.style.border="2px solid #6BC7DE";
+             ccv_error.innerHTML="";
+			return true;
+			 }
+	}
+function s(){
+if(city.value!==""&province.value!==""&zip.value!==""){
+document.getElementsByTagName("textarea")[0].removeAttribute("disabled","disabled");
+
+}
+
+}
+
+
+//check radio button
+function check1(checkedRadio)    
+                    {    
+                        if(tempradio== checkedRadio){  
+                            tempradio.checked=false;  
+                            tempradio=null;//unchecked
+                            	lazy[1].removeAttribute("disabled","disabled");
+                                 lazy[2].removeAttribute("disabled","disabled");														
+                          }   
+                           else{  
+                               tempradio= checkedRadio;   
+							    lazy[1].setAttribute("disabled","disabled");
+							   lazy[2].setAttribute("disabled","disabled");
+                            }  
+                     }
+function check2(checkedRadio)    
+                    {    
+                        if(tempradio== checkedRadio){  
+                            tempradio.checked=false;  
+                            tempradio=null;//unchecked
+                            document.getElementById("card").style.display="none";	
+                               lazy[0].removeAttribute("disabled","disabled");
+							   lazy[2].removeAttribute("disabled","disabled");							
+                          }   
+                           else{  //checked
+                               tempradio= checkedRadio; 
+							   lazy[0].setAttribute("disabled","disabled");
+							   lazy[2].setAttribute("disabled","disabled");
+                            }  
+                     }
+function check3(checkedRadio)    
+                    {    
+                        if(tempradio== checkedRadio){  
+                            tempradio.checked=false;  
+                            tempradio=null;//unchecked
+                            document.getElementById("card").style.display="none";	
+                               lazy[0].removeAttribute("disabled","disabled");
+							   lazy[1].removeAttribute("disabled","disabled");							
+                          }   
+                           else{  //checked
+                               tempradio= checkedRadio; 
+							   document.getElementById("card").style.display="block";	
+							   lazy[0].setAttribute("disabled","disabled");
+							   lazy[1].setAttribute("disabled","disabled");
+                            }  
+                     }
+
+</script>

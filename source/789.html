@@ -1,0 +1,132 @@
+<!doctype.html>
+<html>
+<head>
+<style>
+#cc{     
+         height:700px;
+         width:1450px;
+         background:white;
+         box-shadow:5px 5px 5px #9C9C9C;
+		 border-radius:3px;
+		 padding:35px;
+         border-bottom:30px solid #222222;
+		 
+}
+fieldset{
+width:200px;
+
+}
+
+a:link{position:absolute;
+       left:670px;
+	   top:550px;
+       color:black;
+       text-decoration:none;
+	   font-family:Cambria;
+	   font-size:25px;
+}
+a:hover{color:black;text-decoration:none;font-weight:bold;}
+a:visited{color:black;text-decoration:none;}
+a:hover{color:black;text-decoration:none;}
+</style>
+
+</head>
+<body>
+
+<div id="cc">
+
+<div id="receipt"style="margin-left:5px;margin-right:5px;">
+<fieldset>
+<p style="margin-left:210px">Gamer Galaxy LTD. <br>3660 Midland Ave, </br>Scarborough, ON, M1V 0B8<br/>
+6475201314
+</p>
+<p>MerchantID:87545698814<br/>TermID:007<span style="margin-left:380px;">Ref:#025</span></p>
+<span style="margin-left:210px; font-family:Segoe Print;font-size:30px;font-weight:bold;">Receipt</span>
+<div style="border-top: 2px solid #CCC;"></div>
+<br/>
+<div id="cnum" style="font-family:Cambria;font-size:22px;"></div>
+<div id="cpay" style="font-family:Cambria;font-size:20px;">
+
+<!--pass value-->
+<span id="visa"></span>
+
+<span style="float:right;">Entry Method:Chip</span></div><br/>
+
+<p id="ctime" style="font-family:Cambria;font-size:17px;"></p>
+<span id="ih" style="position:absolute;top:370px;left:520px;font-family:Cambria;font-size:17px;"></span>
+
+
+
+
+<span style="font-family:Cambria;font-size:22px;">Approved</span>
+
+<div style="border-bottom: 2px solid #CCC;margin-top:10px;"></div>
+
+<!--pass value-->
+<p style="margin-left:400px;font-family:Cambria;font-size:22px;font-weight:bold;float:right;">Total:$<span id="pt">0.00</span></p>
+
+<p>By entering a verified PIN,cardholder agrees to pay issuer <span style="margin-left:25px;">such total inaccordance with issuer's agreement with</span>
+<span style="margin-left:35px;"> cardholder(Merchant agreement if credit voucher).</span>
+<span style="margin-left:45px;">Retain this copy for statement vertification.</span>
+</p>
+
+<!--pass value-->
+<p>Application Label:<span id="cr"></span>
+<br/>AID:A0000000031010
+<br/>TVR: 00 00 00 50 00
+<br/>TSI:F1 00
+<br/>
+<span style="margin-left:210px;">Merchant Copy</span>
+</p><a href="Home.html">>>>Back to home page</a>
+</fieldset>
+ </div>
+<img src="success.png" width="360px;" style="position:absolute;left:620px;top:50px;"><br/>
+</div>
+
+
+</body>
+</html>
+<script>
+
+//Pass Value
+var queryString = decodeURIComponent(window.location.search);
+queryString = queryString.substring(1);
+var queries = queryString.split("&");
+var hey=queries[0];
+var hi=queries[1];
+var mei=queries[2];
+
+document.getElementById("visa").innerHTML=hi;
+document.getElementById("cr").innerHTML=hi;
+document.getElementById("pt").innerHTML=mei;
+
+//Date
+my();
+function my(){
+var tmpDate = new Date();
+date = tmpDate.getDate();
+month= tmpDate.getMonth()+1 ;
+year= tmpDate.getYear()+1900;
+
+var whys=month+"/"+date+"/"+year;
+var ni=tmpDate.getHours()+ ":"+ tmpDate.getMinutes() + ":" +tmpDate.getSeconds();
+document.getElementById("ctime").innerHTML=whys;
+document.getElementById("ih").innerHTML=ni;
+
+
+
+
+//swap and cover
+
+		 var res=hey.substring(12,16);
+         res="XXXXXXXXXXXX"+res;
+document.getElementById("cnum").innerHTML=res;
+
+
+
+}
+
+
+</script>
+
+

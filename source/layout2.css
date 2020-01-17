@@ -1,0 +1,551 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote, pre,
+a, abbr, acronym, address, big, cite, code,
+del, dfn, em, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, sup, tt, var,
+b, u, i, center,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td,
+article, aside, canvas, details, embed, 
+figure, figcaption, footer, header, hgroup, 
+menu, nav, output, ruby, section, summary,
+time, mark, audio, video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article, aside, details, figcaption, figure, 
+footer, header, hgroup, menu, nav, section {
+	display: block;
+}
+
+h1 {font-family:Monotype Corsiva;
+   	font-size:50px;
+	width:794px;
+	background-color:#F7F7F7;
+    opacity:0.8;
+	border-left:8px solid #25E5A5;
+	
+	}
+	
+body{ background-image: url(WatchDogs11.jpg)
+}
+hr {
+    display: block;
+	margin-top:0;
+    margin-bottom:3px;
+    margin-left: auto;
+    margin-right: auto;
+    border-style: inset;
+    border-width: 5px;
+}
+
+.main_wrapper{
+	width:1000px;
+	height:auto;
+	margin:auto;
+	}
+	
+.header_wrapper{
+	width:1000px;
+	height:100px;
+	margin:auto;
+
+}	
+#banner{float:left;
+        text-align:center;}
+
+			   
+.menubar{
+	width:1000px;
+	height:50px;
+
+	color:black;
+}
+
+#menu{
+padding:0;
+margin:0;
+line-height:45px;
+float:left;
+}	
+#menu  li{
+	
+	list-style:none;
+	float:left;
+}
+#menu li:hover ul{display:block;
+}
+
+#menu li ul{
+	position:absolute;
+    display:none;
+    	
+}
+
+#menu li ul li{
+	font-family:comic sans MS;
+	position:relative;
+	float:none;
+    background-color:#0E0E0E;
+    color:white;
+	z-index:333;
+	
+			   }
+
+#menu a{
+	text-decoration:none;
+	color:white;
+	padding:0 15px;
+	margin:0;
+	font-size:18px;
+	font-family:comic sans MS;
+	display:block;
+	
+}	
+#menu a:hover{color:white; 
+              background-color:#2E2C2C;
+			  font-weight:bolder; 
+			  text-decoration:none;}
+
+
+#form {float:right;padding-right:1px;line-height:40px;}
+
+.content_wrapper{
+	width:1000px;
+	height:800px;
+	margin:auto;
+}
+#content_area{
+	width:800px;
+	height:1600px;
+	float:right;
+	background-color:rgba(205,205,205,0.5);
+}
+
+	
+
+#sidebar{
+
+	width:200px;
+	height:1600px;
+	background:#2EB8BD;
+    float:left;}
+
+
+#sidebar_title{
+	background:white;
+	color:black;
+	font-size:22px;
+	font-family:arial;
+	text-align:center;
+}
+
+
+}
+
+#cats{
+	text-align:center;
+}
+#cats li{list-style:none; margin:5px;}
+
+#cats a{
+color:black; 
+padding:8px; 
+margin:5px; 
+text-align:center; 
+font-size:22px; 
+font-family:COMIC SANS MS;
+text-decoration:none;}
+
+#cats a:hover{color:#9CE1F6; font-weight:bold; 
+             text-decoration:none;}
+/*The color and  shall be changed*/
+
+
+#footer{
+	width:1000px;
+	height:60px;
+	background:#F0F0F0;
+	clear:both;
+text-align:center}
+#ct{color:white;
+		    position:relative;
+			font-size:15px;
+			background-color:#02AADC;
+            border-radius:5px;
+	        cursor:pointer;
+			padding-top:5px;
+			padding-bottom:5px;
+			padding-left:10px;
+			padding-right:10px;
+			z-index:2;
+			border:none;			
+		    }
+#ct:hover
+		{background: -webkit-gradient(linear, left top, left bottom, from(#02AADC), to(#33c8f3));}
+#Soccer1 {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				display:inline-block;
+				width:375px
+				}
+		#Soccer1
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+		#Soccer2 {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				display:inline-block;
+				width:375px
+				}
+		#Soccer2
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+		#basketball1 {
+		        float:left;
+		        color:white;
+				margin: 5px;
+		        background-color:grey;
+				display:inline-block;
+				width:365px;
+				padding-left:5px;
+				}
+		#basketball1
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}	
+		#basketball2 {
+		        float:left;
+		        color:white;
+				margin: 5px;
+		        background-color:grey;
+				display:inline-block;
+				width:365px;
+				padding-left:5px;
+				}
+		#basketball2
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+ #identity {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				width:245px;
+				height:95px
+				display:inline-block;
+				}
+		 
+		#identity 
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+ #Chronicles {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				width:245px;
+				height:95px
+				display:inline-block;
+				}
+		 
+#Chronicles 
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+ #Blackflag {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				width:245px;
+				height:95px
+				display:inline-block;
+				}
+		 
+#Blackflag 
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+ #Rogue {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				width:245px;
+				height:95px
+				display:inline-block;
+				}
+		 
+#Rogue
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+#Revelations {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				width:245px;
+				height:95px
+				display:inline-block;
+				}
+		 
+#Revelations
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+
+#Unity {float:left;
+		        color:white;
+				margin: 10px;
+		        background-color:grey;
+				width:245px;
+				height:95px
+				display:inline-block;
+				}
+		 
+#Unity
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+		
+		#WD1     {float:left;
+		        color:white;
+				margin-top:10px;
+				margin-right:0;
+				background-color:grey;
+				width:400px;
+				height:95px
+				display:inline-block;
+				}
+		#WD1	 
+		a:link{color:white; 
+		       text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline}
+			 
+		#WD2    {float:left;
+		        color:white;
+				margin-top:10px;
+				margin-left:10px;
+				background-color:grey;
+				width:388px;
+				height:75px;
+				display:inline-block;
+				}
+		#WD2	 
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}
+			 #puzzle
+		a:link{color:white; text-decoration:none;}
+	    a:visited{color:white}
+		a:hover{color:#45EFE4; 
+		          font-weight:bold; 
+             text-decoration:underline;}			
+			
+#cover{position:absolute;
+	   top:0px;
+       width:1700px;
+	   height:2120px;
+       float:left;
+	   background-color:black;
+	   z-index:3;
+       opacity:0.7;
+       display:none;
+}
+div,ul,li,dl,dt,dd{
+	margin:0;
+	padding:0;
+}
+ul,li,dl,dt,dd{
+	list-style:none;
+}
+.demo{
+	margin:0 auto;
+	width:930px;
+}
+.demo ul li{
+	float:left;
+	width:280px;
+	margin-right:6px;
+	position:relative;
+}
+.demo ul li img{
+    border:none;
+	position:relative;
+	z-index:1;
+}
+
+
+.demo ul li a span{
+    position:absolute;
+	z-index:2;
+	bottom:2px;
+	left:2px;
+	width:280px;
+	height:40px;
+	filter:alpha(Opacity=50);-moz-opacity:0.5;opacity: 0.5;
+	background:#000;
+	color:#fff;
+	line-height:40px;
+	text-align:left;
+	display: none;
+	font-family:Californian FB;
+	font-size:20px;
+}
+.demo ul li a:hover span{
+	display:block;
+}
+#x{position:absolute;
+   left:242px;
+   z-index:4;
+   width:20px;
+   height:20px;
+   padding:2px;
+   
+
+}	
+#signup{position:absolute;
+        left:700px;
+	    z-index:3;
+		display:none;
+		   }
+
+#signup a:link{color:black;
+		       text-decoration:none;}
+		      
+#signup a:visited{color:black;
+		       }
+#signup a:hover{color:purple; 
+		        font-weight:bold; 
+                text-decoration:none;}
+		
+fieldset {
+    border-radius: 15px;
+	opacity:0.95;
+    background-color:#DADADA;
+    float:left; 
+    width:232px;
+	height:260px;
+	font-family:Californian FB;
+	font-size:20px;
+	font-weight:bold;
+    display:inline block;
+    margin-right: 2px;
+	padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+fieldset h2{text-align:center;
+            font-size:35px;
+            background: -webkit-repeating-linear-gradient(-45deg, 
+	         rgb(18, 83, 93) , 
+	         rgb(18, 83, 93) 20px, 
+	rgb(64, 111, 118) 20px, 
+	rgb(64, 111, 118) 40px, 
+	rgb(18, 83, 93) 40px);
+	-webkit-text-fill-color: transparent;
+	-webkit-background-clip: text;}
+fieldset h2:after
+{	content: ' ';
+	display: block;
+	width: 100%;
+	height: 2px;
+	margin-top: 5px;
+	background: -webkit-gradient(linear, left top, right top, color-stop(0%,rgba(147,184,189,0)), color-stop(20%,rgba(147,184,189,0.8)), color-stop(53%,rgba(147,184,189,1)), color-stop(79%,rgba(147,184,189,0.8)), 
+	color-stop(100%,rgba(147,184,189,0))); 
+	
+}
+.button{
+	   margin-left:2px;
+       background-color:#109EAE;
+	   border:none;
+	   border-radius:5px;
+	   color:white;
+	   padding: 10px 25px;
+       font-size: 18px;
+	   cursor:pointer;
+}
+.button:hover {background-color: #14B3C4}
+@font-face{
+         font-family:'imooc-icon';
+		 src:url('fonts/icomoon.eot');
+		 src:url('fonts/icomoon.eot?#iefix')format('embedded-opentype')
+             ,url('fonts/icomoon.woff')format('woff')
+			 ,url('fonts/icomoon.ttf')format('truetype')
+			 ,url('fonts/icomoon.svg')format('svg');
+			 
+		font-weight:normal;
+		font-style:normal;
+}
+.imooc-icon{
+         font-family:"imooc-icon";
+		 font-style:normal;
+		 font-weight:normal;
+		 }
+		 
+
+[data-icon]:after{
+    content: attr(data-icon);
+    color: black ;
+	opacity:0.6;
+	font-family:'imooc-icon';
+ }
+.uname{ z-index:4;
+         position:absolute;
+          left:210px;
+		  top:84px;
+	       width:30px;}
+.youpasswd{position:absolute;
+           left:210px;
+	       top:134px;
+	       width:30px;}
+.btn{
+     padding: 7px;
+	 width:342px;
+	 height:50px;
+	 cursor:pointer;
+	 font-size:20px;
+	 background-color:#14B3C4;
+	 border:none;
+	 color:white;
+	 }
+.btn:hover {background-color:#18C7CD }
